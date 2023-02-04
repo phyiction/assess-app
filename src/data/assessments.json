@@ -1,0 +1,11 @@
+[{
+  "id": 1,
+  "name": "Insights Discovery",
+  "description": "TODO",
+  "sectionData": "insights-discovery.json"
+},{
+  "id": 2,
+  "name": "Spiritual Gifts",
+  "description": "TODO",
+  "sectionData": null
+}]
