@@ -20,10 +20,13 @@ export default function Root() {
 
   return (
     <Container>      
-      <p>We believe assessments are helpful tools for growth.</p>
-      <ul>
-        { assessmentItems }      
-      </ul>
+      <Row>
+        <Col>
+          <ul>
+            { assessmentItems }      
+          </ul>
+        </Col>
+      </Row>
     </Container>
   );
 }

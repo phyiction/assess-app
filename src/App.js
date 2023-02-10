@@ -1,5 +1,7 @@
 import { Component, StrictMode } from 'react';
 
+import { createRoot } from 'react-dom/client';
+
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
 
 import Nav from 'react-bootstrap/Nav';
@@ -13,17 +15,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Root from "./routes/root.jsx";
+import Assessment from './pages/Assessment.js';
+import Root from "./pages/root.js";
+import Section from './pages/Section.js';
 
-import Assessment from './Assessment.jsx';
-import Section from './Section.jsx';
+import './scss/styles.scss';
 
-import Logo from './logo.jpg';
-
-import assessmentData from './data/assessments.json';
-import insightsDiscoveryData from './data/insights-discovery.json';
-
-export class WWGAssessApp extends Component {
+export class AssessApp extends Component {
 
   render() {
 
@@ -35,29 +33,28 @@ export class WWGAssessApp extends Component {
       {
         path: `/assessments/:aid`,
         element: <Assessment />,
-        loader: async ({ params }) => {            
-          return assessmentData[params.aid-1];
+        loader: async ({ params }) => {      
+          let data = await import('./data/assessments.json');
+          return data[params.aid-1];          
         }
       },{
         path: '/assessments/:aid/section/:sid',            
         element: <Section />,
         loader: async ({ params }) => {
-          const aid = parseInt(params.aid);
-          let data;
+          let assessmentData = await import('./data/assessments.json');
+          let insightsDiscoveryData = await import('./data/insights-discovery.json');
+          const aid = parseInt(params.aid);          
           switch(aid){
             case 1:
-              data = { 
-                aid: params.aid, 
+              return { 
+                assessment: assessmentData[aid-1], 
                 section: insightsDiscoveryData.sections[params.sid-1] 
-              };
-              break;
+              };              
             case 2:
-              data = null;
-              break;
+              return null;              
             default:
-              data = null;                  
-          }                
-          return data;
+              return null;                  
+          }          
         }
       }
     ]);
@@ -69,15 +66,8 @@ export class WWGAssessApp extends Component {
       >
         <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand href="/">
-              <img
-                alt=""
-                src={Logo}
-                width="32"
-                height="32"
-                className="d-inline-block align-top"
-              />            
-              {' '} Assessments
+            <Navbar.Brand href="/">                          
+              Assessments
             </Navbar.Brand>
           </Container>
         </Navbar>
@@ -88,3 +78,8 @@ export class WWGAssessApp extends Component {
     );
   }
 }
+
+// Assumes HTML template has an element with an id set to 'root'
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<AssessApp />);

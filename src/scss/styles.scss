@@ -1,1 +1,13 @@
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-utilities";
+
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+
+.question{
+  margin-bottom: 1em;
+}

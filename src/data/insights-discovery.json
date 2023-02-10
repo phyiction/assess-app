@@ -1,5 +1,6 @@
 {
   "sections": [{
+      "id": 1,
       "directions": "Choose the ONE description you most naturally identify with. Ask yourself: Am I someone who",
       "prevSection": null,
       "nextSection": 2,
@@ -78,6 +79,7 @@
       }]
     },
     {
+      "id": 2,
       "directions": "Choose the ONE statement that best represents you.",
       "prevSection": 1,
       "nextSection": 3,
@@ -125,6 +127,7 @@
         "D": " get stressed when I feel like I'm being pulled into conflict."
       }]
     }, {
+      "id": 3,
       "directions": "Choose the ONE phrase you are most likely to say in your head or out loud.",
       "prevSection": 2,
       "nextSection": 4,
@@ -160,6 +163,7 @@
         "D": "Just give me the bottom line."
       }]
     }, {
+      "id": 4,
       "directions": "Choose the ONE word/phrase of the four options that best describes you. If you get stuck, just pick the best option available.",
       "prevSection": 3,
       "nextSection": null,
