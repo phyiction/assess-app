@@ -10,12 +10,11 @@ module.exports = {
     data: {
       import: [
         './src/data/assessments.json',
-        './src/data/insights-discovery.json',
-        './src/data/scoring.json'
+        './src/data/temperaments.json'
       ],
     },
     bootstrap: 'bootstrap',
-    react: ['react-bootstrap','react-router-dom','@popperjs/core'],
+    react: ['react-bootstrap','react-router-dom'],
     storage: 'localforage'
   },
   devtool: 'inline-source-map',
@@ -25,6 +24,10 @@ module.exports = {
   plugins: [    
     new HtmlWebpackPlugin({
       template: './templates/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'privacy.html',
+      template: './templates/privacy.html'
     }),
   ],
   output: {

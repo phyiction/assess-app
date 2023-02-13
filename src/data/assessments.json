@@ -1,8 +1,8 @@
 [{
   "id": 1,
-  "name": "Insights Discovery",
+  "name": "What's my Temperament?",
   "description": "TODO",
-  "sectionData": "insights-discovery.json"
+  "sectionData": "temperaments.json"
 },{
   "id": 2,
   "name": "Spiritual Gifts",

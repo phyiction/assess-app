@@ -1,0 +1,290 @@
+{
+  "assessment": {
+    "sections": [{
+        "id": 1,
+        "directions": "Choose the ONE description you most naturally identify with. Ask yourself: Am I someone who",
+        "prevSection": null,
+        "nextSection": 2,
+        "questions": [{
+          "id": 1,
+          "A": "Ready to jump into new tasks, energized by challenges.",
+          "B": "Agreeable, easy to get along with.",
+          "C": "Sensitive to the emotions of others.",
+          "D": "Excitable, passionate, quick to say yes."
+        }, {
+          "id": 2,
+          "A": "Motivated to achieve goals, eager to be the leader.",
+          "B": "Energetic, lively, exhibits love and affection openly.",
+          "C": "Logical, gathers facts and data likes lists.",
+          "D": "Flexible, able to adjust to new conditions, calm in the midst of chaos."
+        }, {
+          "id": 3,
+          "A": "Avoids conflict and drama, levelheaded.",
+          "B": "Fun to be around, a good storyteller with a sense of humor.",
+          "C": "Self-motivated, usually right.",
+          "D": "Careful, thoughtful, doesn't rush into things."
+        }, {
+          "id": 4,
+          "A": "Upbeat, always sees the best in people and situations.",
+          "B": "Detail-oriented, orderly, tidy.",
+          "C": "Confident and assertive with my opinion.",
+          "D": "Cooperative, open to the needs and ideas of others."
+        }, {
+          "id": 5,
+          "A": "A determined problem solver finds a way to get it done.",
+          "B": "Playful, spontaneous, lives in the moment.",
+          "C": "Considerate, kind, polite.",
+          "D": "Serious, avoids being impulsive or flashy."
+        }, {
+          "id": 6,
+          "A": "Friendly, outgoing, talkative.",
+          "B": "Efficient and effective with my time and effort.",
+          "C": "Relaxed, hard to provoke or annoy.",
+          "D": "Precise, thorough, has very high standards."
+        }, {
+          "id": 7,
+          "A": "Not confident in social situations.",
+          "B": "Can be quick-tempered.",
+          "C": "Struggles to make decisions quickly.",
+          "D": "Can dominate conversations."
+        }, {
+          "id": 8,
+          "A": "Unafraid to disagree with others, bossy.",
+          "B": "Uncomfortable with solitude, afraid of missing out.",
+          "C": "Rarely sets goals for myself, unclear on purpose or direction.",
+          "D": "Sometimes feels isolated, too introspective."
+        }, {
+          "id": 9,
+          "A": "Can be overbearing, prefers to be in control.",
+          "B": "Unsure of myself, reluctant to jump into conversations or activities.",
+          "C": "Seeks diversions from tasks, can waste time or daydream.",
+          "D": "Prone to feel sad or gloomy, gets hung up on bad news."
+        }, {
+          "id": 10,
+          "A": "Persuades others to do things my way, thinks the end justifies the means.",
+          "B": "Often exaggerates stories, compulsive talker.",
+          "C": "Uses sarcasm or the silent treatment when upset.",
+          "D": "Struggles to express enthusiasm."
+        }, {
+          "id": 11,
+          "A": "No sense of urgency, resents being pushed.",
+          "B": "Skeptical sees obstacles, thinks about the worst-case scenario.",
+          "C": "Fickle, forgetful, makes excuses repeats stories.",
+          "D": "Reluctant to admit mistakes or say I'm sorry, rarely compliments others."
+        }, {
+          "id": 12,
+          "A": "Struggles with follow-through especially when things stop being fun.",
+          "B": "Slow to get moving, a procrastinator.",
+          "C": "Dislikes tears and emotions in others can be unsympathetic.",
+          "D": "Hard to please, can be critical."
+        }]
+      },
+      {
+        "id": 2,
+        "directions": "Choose the ONE statement that best represents you.",
+        "prevSection": 1,
+        "nextSection": 3,
+        "questions": [{
+          "id": 13,
+          "A": "I like to talk through me decisions out loud with others.",
+          "B": "I am decisive and my decisions are usually right.",
+          "C": "I want all the information before make a decision.",
+          "D": "I sometimes just want someone else to make the decision for me."
+        }, {
+          "id": 14,
+          "A": "I like knowing a little about a lot of things and a lot about the things that really interest me.",
+          "B": "I like to stick to the schedule.",
+          "C": "I like accomplishing things and feeding productive.",
+          "D": "I like coming up with creative idets people will enjoy."
+        }, {
+          "id": 15,
+          "A": "I tend to notice imperfections and mistakes.",
+          "B": "I tend to forget or disregard things I'm not interested in.",
+          "C": "I tend to not even think of bad or sad things.",
+          "D": "I tend to not show my emotions."
+        }, {
+          "id": 16,
+          "A": "I frequently tell stories about my personal experiences.",
+          "B": "I consider every thought and detail before communicating.",
+          "C": "I cut to the chase in conversations, I don't need every last detail.",
+          "D": "I hesitate to soak up and advocate for myself when I disagree with the group."
+        }, {
+          "id": 17,
+          "A": "I want the freedom to do projects in my own time frame.",
+          "B": "I want time to process my thoughts and answers so know they're correct.",
+          "C": "I want to know the why behind a project so I know it's worth my time.",
+          "D": "I want variety and spontaneity with projects."
+        }, {
+          "id": 18,
+          "A": "I'm good at delegating to others.",
+          "B": "I'm good at teaching others.",
+          "C": "I'm good at inspiring others.",
+          "D": "I'm good at caring for others."
+        }, {
+          "id": 19,
+          "A": "I get stressed when I feel like I'm not liked",
+          "B": "I get stressed when I feel like I'm not understood.",
+          "C": "I get stressed when I feel like in not in control.",
+          "D": " get stressed when I feel like I'm being pulled into conflict."
+        }]
+      }, {
+        "id": 3,
+        "directions": "Choose the ONE phrase you are most likely to say in your head or out loud.",
+        "prevSection": 2,
+        "nextSection": 4,
+        "questions": [{
+          "id": 20,
+          "A": "Who else is going to be there?",
+          "B": "What will we be doing?",
+          "C": "Do I have to go?",
+          "D": "You go. I have better things to do."
+        }, {
+          "id": 21,
+          "A": "Are you sure that's safe?",
+          "B": "Hurry up! We're late.",
+          "C": "That sounds like fun!",
+          "D": "I'm good with whatever."
+        }, {
+          "id": 22,
+          "A": "It's done. I took care of it.",
+          "B": "I'll do it, if someone will do it with me.",
+          "C": "I've been giving it some thought.",
+          "D": "No worries, it will all work out."
+        }, {
+          "id": 23,
+          "A": "No, thanks I'll just watch.",
+          "B": "I didn't mean it that way.",
+          "C": "I'd be happy to help!",
+          "D": "I'm not sure trust them."
+        }, {
+          "id": 24,
+          "A": "I totally forgot about that I'm sorry.",
+          "B": "I don't really care. You decide.",
+          "C": "That won't work I've already planned to ...",
+          "D": "Just give me the bottom line."
+        }]
+      }, {
+        "id": 4,
+        "directions": "Choose the ONE word/phrase of the four options that best describes you. If you get stuck, just pick the best option available.",
+        "prevSection": 3,
+        "nextSection": null,
+        "questions": [{
+          "id": 25,
+          "A": "Easygoing",
+          "B": "Ambitious",
+          "C": "Energetic",
+          "D": "Analytical"
+        }, {
+          "id": 26,
+          "A": "Enthusiastic",
+          "B": "Fearless",
+          "C": "Agreeable",
+          "D": "Empathetic"
+        }, {
+          "id": 27,
+          "A": "Cautious",
+          "B": "Capable",
+          "C": "Calm",
+          "D": "Charming"
+        }, {
+          "id": 28,
+          "A": "Positive",
+          "B": "Organized",
+          "C": "Assertive",
+          "D": "Content"
+        }, {
+          "id": 29,
+          "A": "Resourceful",
+          "B": "Considerate",
+          "C": "Lighthearted",
+          "D": "Reserved"
+        }, {
+          "id": 30,
+          "A": "Productive",
+          "B": "Patient",
+          "C": "Detail-oriented",
+          "D": "People-oriented"
+        }, {
+          "id": 31,
+          "A": "Pessimistic",
+          "B": "Bossy",
+          "C": "Indifferent",
+          "D": "Distractible"
+        }, {
+          "id": 32,
+          "A": "Demanding",
+          "B": "Detached",
+          "C": "Naive",
+          "D": "Moody"
+        }, {
+          "id": 33,
+          "A": "Self-centered",
+          "B": "Sluggish",
+          "C": "Scatterbrained",
+          "D": "Suspicious"
+        }, {
+          "id": 34,
+          "A": "Undisciplined",
+          "B": "Unmotivated",
+          "C": "Unsympathetic",
+          "D": "Unforgiving"
+        }, {
+          "id": 35,
+          "A": "Indecisive",
+          "B": "Dramatic",
+          "C": "Impatient",
+          "D": "Insecure"
+        }, {
+          "id": 36,
+          "A": "Blunt",
+          "B": "Judgmental",
+          "C": "Apathetic",
+          "D": "Restless"
+        }, {
+          "id": 37,
+          "A": "Driven",
+          "B": "Imaginative",
+          "C": "Compassionate",
+          "D": "Even-keeled"
+        }, {
+          "id": 38,
+          "A": "Well-balanced",
+          "B": "Enjoys working hard",
+          "C": "Musical or artistic",
+          "D": "Turns crisis into comedy"
+        }, {
+          "id": 39,
+          "A": "Methodical",
+          "B": "Loud laugh",
+          "C": "Quiet but witty",
+          "D": "Brave"
+        }, {
+          "id": 40,
+          "A": "Patient leader",
+          "B": "Curious",
+          "C": "Delegates well",
+          "D": "Deep and thoughtful"
+        }]
+      }
+    ]
+  },
+  "scoring": {
+    "temperaments": [{
+      "name": "sanguine",
+      "color": "yellow",
+      "answers": ["D", "B", "B", "A", "B", "A", "D", "B", "C", "B", "C", "A", "A", "D", "C", "A", "D", "C", "A", "A", "C", "B", "C", "A", "C", "A", "D", "A", "C", "D", "D", "C", "C", "A", "B", "D", "B", "D", "B", "B"]
+    }, {
+      "name": "choleric",
+      "color": "red",
+      "answers": ["A", "A", "C", "C", "A", "B", "B", "A", "A", "A", "D", "C", "B", "C", "D", "C", "C", "A", "C", "D", "B", "A", "B", "D", "B", "B", "B", "C", "A", "A", "B", "A", "A", "C", "C", "A", "A", "B", "D", "C"]
+    }, {
+      "name": "melancholic",
+      "color": "blue",
+      "answers": ["C", "C", "D", "B", "D", "D", "A", "D", "D", "C", "B", "D", "C", "B", "A", "B", "B", "B", "B", "B", "A", "C", "D", "C", "D", "D", "A", "B", "D", "C", "A", "D", "D", "D", "D", "B", "C", "C", "A", "D"]
+    }, {
+      "name": "phlegmatic",
+      "color": "green",
+      "answers": ["B", "D", "A", "D", "C", "C", "C", "C", "B", "D", "A", "B", "D", "A", "B", "D", "A", "D", "D", "C", "D", "D", "A", "B", "A", "C", "C", "D", "B", "B", "C", "B", "B", "B", "A", "C", "D", "A", "C", "A"]
+    }]
+  }
+}

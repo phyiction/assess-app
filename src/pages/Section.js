@@ -3,15 +3,13 @@ import {
   useLoaderData
 } from "react-router-dom";
 
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-
+import Row from 'react-bootstrap/Row';
 
 import { MultipleChoiceQuestion } from '../components/MultipleChoiceQuestion.js';
+import Utils from '../components/Utils.js';
 
 export default function Section() {
     
@@ -19,7 +17,14 @@ export default function Section() {
 
   const questions = data.section.questions.map((q) => {
     return (
-      <MultipleChoiceQuestion key={q.id} question={q} />
+      <MultipleChoiceQuestion 
+        key={q.id} 
+        answer={data.answers[Utils.getQuestionId(q.id)]} 
+        assessment={data.assessment} 
+        db={data.db} 
+        section={data.section} 
+        question={q} 
+      />
     );
   });
 

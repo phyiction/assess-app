@@ -1,29 +1,62 @@
-import { Component } from 'react';
+import { useState } from 'react';
 
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
 
-export class MultipleChoiceQuestion extends Component {
-  
-  constructor(props){
-    super(props);
-  }
+import Utils from './Utils.js';
 
-  render() {
+export function MultipleChoiceQuestion(props){
 
-    const options = ["A","B","C","D"].map((opt) => {
-      return (        
-        <Form.Check key={opt} name={`q-${this.props.question.id}`} type="radio" label={`${opt}. ${this.props.question[opt]}`} />
-      );
+  const assessmentId = Utils.getAssessmentId(props.assessment.id);
+  const sectionId = Utils.getSectionId(props.section.id);
+  const questionId = Utils.getQuestionId(props.question.id);
+
+  const [choice, setChoice ] = useState(props.answer || null);
+
+  function updateChoice(e){    
+
+    props.db.getItem(assessmentId).then((answers) => {
+
+      if(!answers){
+        answers = {};
+      }      
+      
+      answers[questionId] = e.target.value; 
+      
+      props.db.setItem(assessmentId, answers).then(() => {
+        setChoice(e.target.value);
+        console.debug(`Saved choice for question ${questionId} in section ${sectionId} of assessment ${assessmentId}`);
+      }).catch((err) => {
+        console.error(`Unable to save choice for question ${questionId} in section ${sectionId} of assessment ${assessmentId}`);
+      });
     });
-
-    return (
-      <div className="question">
-        <h6>{this.props.question.id}.</h6>
-        <div className="mb-3">          
-          { options }            
-        </div>
-      </div>
-    );
   }
+
+  const options = ["A","B","C","D"].map((opt) => {
+    return (        
+      <Form.Check 
+        key={opt} 
+        name={`a${props.assessment.id}-s${props.section.id}-q${props.question.id}`} 
+        type="radio" 
+        label={`${opt}. ${props.question[opt]}`}
+        value={opt}
+        checked={opt === choice}
+        onChange={updateChoice} />
+    );
+  });
+
+  return (
+    <Container className="question" fluid>
+      <Row>
+        <Col lg="auto" md="auto" sm="auto" xs="auto">
+          {props.question.id}.
+        </Col>
+        <Col lg="auto" md="auto" sm="auto" xs="auto">
+          { options }            
+        </Col>
+      </Row>
+    </Container>
+  );
 }

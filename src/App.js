@@ -15,15 +15,37 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import localforage from "localforage/src/localforage.js";
+
 import Assessment from './pages/Assessment.js';
-import Root from "./pages/root.js";
+import AssessmentResults from './pages/AssessmentResults.js';
+import Root from "./pages/Root.js";
 import Section from './pages/Section.js';
+
+import Utils from './components/Utils.js';
 
 import './scss/styles.scss';
 
 export class AssessApp extends Component {
 
-  render() {
+  constructor(props){
+    super(props);
+
+    this.db = localforage.createInstance({
+      name: "assessments"
+    });    
+  }
+
+  componentDidMount(){
+    const db = this.db;
+    db.ready().then(() => {
+      console.info(`localforage driver is ${db.driver()}`);
+    });    
+  }
+
+  render(){
+
+    const db = this.db;
 
     const router = createBrowserRouter([
       {
@@ -35,26 +57,46 @@ export class AssessApp extends Component {
         element: <Assessment />,
         loader: async ({ params }) => {      
           let data = await import('./data/assessments.json');
-          return data[params.aid-1];          
+          return {
+            db: db,
+            assessment: data[params.aid-1]
+          };          
         }
       },{
         path: '/assessments/:aid/section/:sid',            
         element: <Section />,
         loader: async ({ params }) => {
           let assessmentData = await import('./data/assessments.json');
-          let insightsDiscoveryData = await import('./data/insights-discovery.json');
+          let temperamentsAssessmentData = await import('./data/temperaments.json');
+          let answers = await db.getItem(Utils.getAssessmentId(params.aid));
           const aid = parseInt(params.aid);          
           switch(aid){
             case 1:
-              return { 
-                assessment: assessmentData[aid-1], 
-                section: insightsDiscoveryData.sections[params.sid-1] 
+              return {                
+                answers: answers,
+                assessment: assessmentData[aid-1],
+                db: db,
+                section: temperamentsAssessmentData.assessment.sections[params.sid-1] 
               };              
             case 2:
               return null;              
             default:
               return null;                  
           }          
+        }
+      },{
+        path: '/assessments/:aid/results',
+        element: <AssessmentResults />,
+        loader: async ({ params }) => {
+          let assessmentData = await import('./data/assessments.json');
+          let temperamentsAssessmentData = await import('./data/temperaments.json');
+          let answers = await db.getItem(Utils.getAssessmentId(params.aid));
+          const aid = parseInt(params.aid);
+          return {
+            answers: answers,
+            assessment: assessmentData[aid-1],
+            scoring: temperamentsAssessmentData.scoring
+          };
         }
       }
     ]);
@@ -66,14 +108,22 @@ export class AssessApp extends Component {
       >
         <Navbar bg="light" expand="lg">
           <Container>
-            <Navbar.Brand href="/">                          
-              Assessments
-            </Navbar.Brand>
+            <Navbar.Brand href="/">Assessments</Navbar.Brand>
           </Container>
         </Navbar>
         <StrictMode>
           <RouterProvider router={router} />
-        </StrictMode>        
+        </StrictMode>
+        <footer>          
+          <Container>
+            <Nav className="justify-content-center">
+              <Nav.Item>
+                <Nav.Link className="text-muted" href="privacy.html" target="_blank">Privacy</Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <p className="text-center text-muted"></p>
+          </Container>
+        </footer>
       </ThemeProvider>
     );
   }
