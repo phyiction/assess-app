@@ -14,7 +14,7 @@ export default class Utils {
 
   static getIndexFromQuestionId(id){
     const matches = id.match(/q(\d+)/);
-    if(matches.length == 2){
+    if(matches && matches.length == 2){
       return matches[1]-1;
     }else{
       return null;

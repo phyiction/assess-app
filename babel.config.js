@@ -1,12 +1,8 @@
 module.exports = {
   presets: [
-    [
-      "@babel/preset-env",
-      {
-        modules: false
-      }
-    ],
-    ["@babel/preset-react", {"runtime": "automatic"}]
+    ["@babel/preset-env", { modules: false }],
+    ["@babel/preset-react", {"runtime": "automatic"}],
+    ['jest']
   ],
   plugins: [
     "@babel/plugin-transform-runtime",
@@ -14,6 +10,9 @@ module.exports = {
     "@babel/plugin-proposal-class-properties"
   ],
   env: {
+    test: {
+      plugins: ["@babel/plugin-transform-modules-commonjs"]
+    },
     production: {
       only: ["src"],
       plugins: [
