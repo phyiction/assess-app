@@ -9,23 +9,40 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import { MultipleChoiceQuestion } from '../components/MultipleChoiceQuestion.js';
+import { NumberInputQuestion } from '../components/NumberInputQuestion.js';
 import Utils from '../components/Utils.js';
 
-export default function Section() {
+export default function Section(){
     
   const data = useLoaderData();
 
+  const directions = data.section.directions.map((d, i) => {
+    return (<div key={i}>{d}</div>);
+  });
+
   const questions = data.section.questions.map((q) => {
-    return (
-      <MultipleChoiceQuestion 
-        key={q.id} 
-        answer={data.answers[Utils.getQuestionId(q.id)]} 
-        assessment={data.assessment} 
-        db={data.db} 
-        section={data.section} 
-        question={q} 
-      />
-    );
+
+    if(data.assessment.id === 1){
+      return (
+        <MultipleChoiceQuestion 
+          key={q.id} 
+          answer={data.answers[Utils.getQuestionId(q.id)]} 
+          assessment={data.assessment} 
+          db={data.db} 
+          section={data.section} 
+          question={q} 
+        />
+      );
+    } else {
+      return (
+        <NumberInputQuestion 
+          key={q.id} 
+          answer={data.answers[Utils.getQuestionId(q.id)]} 
+          assessment={data.assessment} 
+          db={data.db}          
+          question={q} 
+        />);
+    }
   });
 
   let previous;
@@ -57,7 +74,7 @@ export default function Section() {
             <span className="text-muted">Section {data.section.id}</span>
           </p>
           <h5>Directions</h5>
-          <p>{data.section.directions}</p>
+          <div>{ directions }</div>
           { questions }
         </Col>
       </Row>

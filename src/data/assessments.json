@@ -2,10 +2,10 @@
   "id": 1,
   "name": "What's my Temperament?",
   "description": "TODO",
-  "sectionData": "temperaments.json"
+  "assessment": "temperaments.json"
 },{
   "id": 2,
-  "name": "Spiritual Gifts",
+  "name": "Spiritual Gifts Survey",
   "description": "TODO",
-  "sectionData": null
+  "assessment": "spiritual_gifts.json"
 }]

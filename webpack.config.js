@@ -10,7 +10,8 @@ module.exports = {
     data: {
       import: [
         './src/data/assessments.json',
-        './src/data/temperaments.json'
+        './src/data/temperaments.json',
+        './src/data/spiritual_gifts.json'
       ],
     },
     bootstrap: 'bootstrap',

@@ -66,12 +66,12 @@ export class AssessApp extends Component {
         path: '/assessments/:aid/section/:sid',            
         element: <Section />,
         loader: async ({ params }) => {
-          let assessmentData = await import('./data/assessments.json');
-          let temperamentsAssessmentData = await import('./data/temperaments.json');
+          let assessmentData = await import('./data/assessments.json');          
           let answers = await db.getItem(Utils.getAssessmentId(params.aid));
           const aid = parseInt(params.aid);          
           switch(aid){
             case 1:
+              let temperamentsAssessmentData = await import('./data/temperaments.json');
               return {                
                 answers: answers,
                 assessment: assessmentData[aid-1],
@@ -79,9 +79,15 @@ export class AssessApp extends Component {
                 section: temperamentsAssessmentData.assessment.sections[params.sid-1] 
               };              
             case 2:
-              return null;              
+              let spiritualGiftsAssessmentData = await import('./data/spiritual_gifts.json');
+              return {                
+                answers: answers,
+                assessment: assessmentData[aid-1],
+                db: db,
+                section: spiritualGiftsAssessmentData.assessment.sections[params.sid-1] 
+              };            
             default:
-              return null;                  
+              return {};                  
           }          
         }
       },{

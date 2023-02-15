@@ -2,7 +2,10 @@
   "assessment": {
     "sections": [{
         "id": 1,
-        "directions": "Choose the ONE description you most naturally identify with. Ask yourself: Am I someone who",
+        "directions": [
+          "Choose the ONE description you most naturally identify with.",
+          "Ask yourself: Am I someone who (is) ..."
+        ],
         "prevSection": null,
         "nextSection": 2,
         "questions": [{
@@ -81,7 +84,9 @@
       },
       {
         "id": 2,
-        "directions": "Choose the ONE statement that best represents you.",
+        "directions": [
+          "Choose the ONE statement that best represents you."
+        ],
         "prevSection": 1,
         "nextSection": 3,
         "questions": [{
@@ -129,7 +134,9 @@
         }]
       }, {
         "id": 3,
-        "directions": "Choose the ONE phrase you are most likely to say in your head or out loud.",
+        "directions": [
+          "Choose the ONE phrase you are most likely to say in your head or out loud."
+        ],
         "prevSection": 2,
         "nextSection": 4,
         "questions": [{
@@ -165,7 +172,10 @@
         }]
       }, {
         "id": 4,
-        "directions": "Choose the ONE word/phrase of the four options that best describes you. If you get stuck, just pick the best option available.",
+        "directions": [
+          "Choose the ONE word/phrase of the four options that best describes you.",
+          "If you get stuck, just pick the best option available."
+        ],
         "prevSection": 3,
         "nextSection": null,
         "questions": [{
