@@ -118,17 +118,7 @@ export class AssessApp extends Component {
         </Navbar>
         <StrictMode>
           <RouterProvider router={router} />
-        </StrictMode>
-        <footer>          
-          <Container>
-            <Nav className="justify-content-center">
-              <Nav.Item>
-                <Nav.Link className="text-muted" href="privacy.html" target="_blank">Privacy</Nav.Link>
-              </Nav.Item>
-            </Nav>
-            <p className="text-center text-muted"></p>
-          </Container>
-        </footer>
+        </StrictMode>        
       </ThemeProvider>
     );
   }

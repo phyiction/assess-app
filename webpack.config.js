@@ -25,11 +25,7 @@ module.exports = {
   plugins: [    
     new HtmlWebpackPlugin({
       template: './templates/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'privacy.html',
-      template: './templates/privacy.html'
-    }),
+    })    
   ],
   output: {
     filename: '[name].bundle.js',
