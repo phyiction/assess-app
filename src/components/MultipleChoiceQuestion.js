@@ -48,7 +48,7 @@ export function MultipleChoiceQuestion(props){
   });
 
   return (
-    <Container className="question" fluid>
+    <Container className="aa-question" fluid>
       <Row>
         <Col lg="auto" md="auto" sm="auto" xs="auto">
           {props.question.id}.

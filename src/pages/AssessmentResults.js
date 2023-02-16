@@ -61,18 +61,34 @@ function TemperamentsAssessmentResults(data){
     }
   }
 
-  const temperamentHeadings = data.scoring.temperaments.map((t) => {
-    return (<th key={t.name}>{t.name}</th>);
+  const sortedScores = Object.entries(scores);
+  sortedScores.sort((a,b) => {
+    if(a[1] < b[1]){
+      return 1;
+    } else if(a[1] == b[1]){
+      return 0;
+    } else {
+      return -1;
+    }
   });
 
-  const scoreElements = data.scoring.temperaments.map((t) => {
+  function getColor(n){
+    const found = data.scoring.temperaments.find((t) => t.name === n);
+    if(found !== null){
+      return found.color;
+    }else{
+      "";
+    }
+  }
+
+  const scoreElements = sortedScores.map((t) => {
     return (      
-      <Col key={t.name}>
+      <Col key={t[0]}>
         <div className="text-center">
-          <b>{t.name}</b>
+          <b>{t[0]}</b>
         </div>
-        <div className="text-center" style={{ padding: '15px', border: `solid 4px ${t.color}` }}>
-          {scores[t.name]}
+        <div className="text-center" style={{ padding: '15px', border: `solid 4px ${getColor(t[0])}` }}>
+          {t[1]}
         </div>
       </Col>      
     );
