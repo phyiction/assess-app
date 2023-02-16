@@ -12,12 +12,31 @@ export default function AssessmentResults() {
     
   const data = useLoaderData();
 
+  let results;
   switch(data.assessment.id){
     case 1:
-      return TemperamentsAssessmentResults(data);
+      results = TemperamentsAssessmentResults(data);
+      break;
+    case 2:
+      results = SpiritualGiftsAssessmentResults(data);
+      break;
     default:
-      return null;
+       null;
   }
+
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <p>
+            <Link to="/">Home</Link> > &nbsp;
+            <span className="text-muted">{data.assessment.name}</span>
+          </p>          
+        </Col>
+      </Row>
+      {results}      
+    </Container>
+  );
 }
 
 function TemperamentsAssessmentResults(data){
@@ -60,18 +79,48 @@ function TemperamentsAssessmentResults(data){
   });
 
   return (
-    <Container>
+    <Row>
+     {scoreElements}
+    </Row>    
+  );
+}
+
+function SpiritualGiftsAssessmentResults(data){
+
+  const giftScores = Object.entries(data.scoring).map((arr) => {
+    const score = arr[1].map((id) => {
+      const qid = Utils.getQuestionId(id);
+      return parseInt(data.answers[qid]);
+    }).reduce((acc,val) => acc + val, 0);
+    return [arr[0], score];
+  });
+  
+  giftScores.sort((a,b) => {
+    if(a[1] < b[1]){
+      return 1;
+    }else if(a[1] == b[1]){
+      return 0;
+    }else{
+      return -1;
+    }
+  });
+
+  const gifts = giftScores.map((g) => {
+    return (
       <Row>
-        <Col>
-          <p>
-            <Link to="/">Home</Link> > &nbsp;
-            <Link to={`/assessments/${data.assessment.id}`}>{data.assessment.name}</Link>
-          </p>          
-        </Col>
+        <Col>{g[0]}</Col>
+        <Col>{g[1]}</Col>
       </Row>
-      <Row>
-       {scoreElements}
-      </Row>
-    </Container>
+    );
+  });
+
+  return (
+    <Row>
+      <Col>
+        <Container>
+          {gifts}
+        </Container>
+      </Col>
+    </Row>
   );
 }

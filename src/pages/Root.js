@@ -14,7 +14,7 @@ export default function Root() {
 
   const assessmentItems = assessments.map((a) => {
     return (
-      <li key={`a-${a.id}`}><Link to={`assessments/${a.id}`}>{a.name}</Link></li>
+      <li key={`a-${a.id}`}><Link to={`assessments/${a.id}/section/1`}>{a.name}</Link></li>
     );
   });
 

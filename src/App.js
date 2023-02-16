@@ -17,10 +17,9 @@ import {
 
 import localforage from "localforage/src/localforage.js";
 
-import Assessment from './pages/Assessment.js';
 import AssessmentResults from './pages/AssessmentResults.js';
+import AssessmentSection from './pages/AssessmentSection.js';
 import Root from "./pages/Root.js";
-import Section from './pages/Section.js';
 
 import Utils from './components/Utils.js';
 
@@ -51,58 +50,58 @@ export class AssessApp extends Component {
       {
         path: "/",
         element: <Root />
-      },
-      {
-        path: `/assessments/:aid`,
-        element: <Assessment />,
-        loader: async ({ params }) => {      
-          let data = await import('./data/assessments.json');
-          return {
-            db: db,
-            assessment: data[params.aid-1]
-          };          
-        }
       },{
         path: '/assessments/:aid/section/:sid',            
-        element: <Section />,
+        element: <AssessmentSection />,
         loader: async ({ params }) => {
           let assessmentData = await import('./data/assessments.json');          
           let answers = await db.getItem(Utils.getAssessmentId(params.aid));
-          const aid = parseInt(params.aid);          
+          const aid = parseInt(params.aid);
+          let section;
           switch(aid){
             case 1:
               let temperamentsAssessmentData = await import('./data/temperaments.json');
-              return {                
-                answers: answers,
-                assessment: assessmentData[aid-1],
-                db: db,
-                section: temperamentsAssessmentData.assessment.sections[params.sid-1] 
-              };              
+              section = temperamentsAssessmentData.assessment.sections[params.sid-1];
+              break;           
             case 2:
               let spiritualGiftsAssessmentData = await import('./data/spiritual_gifts.json');
-              return {                
-                answers: answers,
-                assessment: assessmentData[aid-1],
-                db: db,
-                section: spiritualGiftsAssessmentData.assessment.sections[params.sid-1] 
-              };            
+              section = spiritualGiftsAssessmentData.assessment.sections[params.sid-1];                    
+              break;
             default:
-              return {};                  
+              section = null;                
           }          
+          return {                
+            answers: answers,
+            assessment: assessmentData[aid-1],
+            db: db,
+            section: section 
+          };  
         }
       },{
         path: '/assessments/:aid/results',
         element: <AssessmentResults />,
         loader: async ({ params }) => {
-          let assessmentData = await import('./data/assessments.json');
-          let temperamentsAssessmentData = await import('./data/temperaments.json');
+          let assessmentData = await import('./data/assessments.json');          
           let answers = await db.getItem(Utils.getAssessmentId(params.aid));
           const aid = parseInt(params.aid);
+          let scoring;
+          switch(aid){
+            case 1:
+              let temperamentsAssessmentData = await import('./data/temperaments.json');
+              scoring = temperamentsAssessmentData.scoring;
+              break;
+            case 2:
+              let spiritualGiftsAssessmentData = await import('./data/spiritual_gifts.json');
+              scoring = spiritualGiftsAssessmentData.scoring;
+              break;
+            default:
+              scoring = null;
+          }   
           return {
             answers: answers,
             assessment: assessmentData[aid-1],
-            scoring: temperamentsAssessmentData.scoring
-          };
+            scoring: scoring
+          }       
         }
       }
     ]);

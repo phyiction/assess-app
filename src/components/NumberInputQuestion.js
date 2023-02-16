@@ -32,24 +32,21 @@ export function NumberInputQuestion(props){
     });
   }
 
-  const options = ["1","2","3","4","5"].map((opt) => {
+  const options = ["","5","4","3","2","1"].map((opt) => {
     return (        
-      <option key={opt} value={opt}>{opt}</option>
+      <option key={opt} value={opt}>{opt === "" ? "-" : opt}</option>
     );
   });
 
   return (
-    <Container className="question">
-      <Row>
-        <Col sm={1}>
-          <div className="text-end">{props.question.id}.</div>
-        </Col>
+    <Container className="aa-question">
+      <Row>        
         <Col sm={1}>
           <Form.Select size="sm" onChange={updateChoice} defaultValue={props.answer}>
             { options }
           </Form.Select>           
         </Col>
-        <Col sm={10}>
+        <Col sm={11}>          
           { props.question.question }
         </Col>
       </Row>
