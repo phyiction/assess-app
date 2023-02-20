@@ -121,21 +121,29 @@ function SpiritualGiftsAssessmentResults(data){
     }
   });
 
-  const gifts = giftScores.map((g) => {
+  const gifts = giftScores.map((g,i) => {
     return (
-      <Row>
-        <Col>{g[0]}</Col>
-        <Col>{g[1]}</Col>
-      </Row>
+      <tr>  
+        <td>{i+1}</td>
+        <td>{g[0]}</td>
+        <td>{g[1]}</td>
+      </tr>
     );
   });
 
   return (
     <Row>
       <Col>
-        <Container>
+        <table className="aa-table">
+          <thead>
+            <th>#</th>
+            <th>Spiritual Gift</th>
+            <th>Score</th>
+          </thead>
+          <tbody>
           {gifts}
-        </Container>
+          </tbody>
+        </table>
       </Col>
     </Row>
   );

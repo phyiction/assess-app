@@ -11,3 +11,16 @@
 .aa-directions, .aa-question {
   margin-bottom: 1em;
 }
+
+.aa-table th,
+.aa-table td {
+  padding: 0.5em;
+}
+
+table.aa-table {
+  border: solid 1px #666;
+}
+
+.aa-table tr:nth-child(odd){
+  background: #EFEFEF;
+}
