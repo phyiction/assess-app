@@ -44,6 +44,7 @@ export class AssessApp extends Component {
 
   render(){
 
+    const props = this.props;
     const db = this.db;
 
     const router = createBrowserRouter([
@@ -109,19 +110,27 @@ export class AssessApp extends Component {
     });
 
     return (
-      <ThemeProvider
-        breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-        minBreakpoint="xxs"
-      >
-        <Navbar bg="light" expand="lg">
-          <Container>
-            <Navbar.Brand href="/">Assessments</Navbar.Brand>
-          </Container>
-        </Navbar>
-        <StrictMode>
+      <StrictMode>
+        <ThemeProvider
+          breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+          minBreakpoint="xxs"
+        >
+          <Navbar bg="light" expand="lg">
+            <Container>
+              <Navbar.Brand href="/">Assessments</Navbar.Brand>
+            </Container>
+          </Navbar> 
           <RouterProvider router={router} />
-        </StrictMode>        
-      </ThemeProvider>
+          <footer className="footer">
+            <div className="container text-center">
+              <small className="small text-muted">
+                Version {props.version} &bull; &nbsp;
+                <a href="https://github.com/phyiction/assess-app/issues/new">Report Bug</a>
+              </small>
+            </div>
+          </footer>
+        </ThemeProvider>
+      </StrictMode>
     );
   }
 }
@@ -129,4 +138,4 @@ export class AssessApp extends Component {
 // Assumes HTML template has an element with an id set to 'root'
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<AssessApp />);
+root.render(<AssessApp version="0.0.1" />);
