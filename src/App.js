@@ -104,7 +104,9 @@ export class AssessApp extends Component {
           }       
         }
       }
-    ]);
+    ],{
+      basename: '/projects/assess-app/'
+    });
 
     return (
       <ThemeProvider

@@ -29,16 +29,13 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: 'auto',
+    path: path.resolve(__dirname, 'dist'),      
+    publicPath: '/projects/assess-app/',
     clean: true,    
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
-    historyApiFallback: {
-      index: './templates/index.html'
-    },
-    hot: true
+    hot: true,
+    open: ['/projects/assess-app/']
   },
   module: {
     rules: [   

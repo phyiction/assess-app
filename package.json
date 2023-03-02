@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack serve --open",
+    "start": "webpack serve",
     "test": "jest",
     "watch": "webpack --watch"
   },

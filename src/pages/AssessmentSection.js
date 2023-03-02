@@ -55,11 +55,13 @@ export default function AssessmentSection(){
 
   const questions = data.section.questions.map((q) => {
 
+    const answer = data.answers ? data.answers[Utils.getQuestionId(q.id)] : null;
+
     if(data.assessment.id === 1){
       return (
         <MultipleChoiceQuestion 
           key={q.id} 
-          answer={data.answers[Utils.getQuestionId(q.id)]} 
+          answer={answer} 
           assessment={data.assessment} 
           db={data.db} 
           section={data.section} 
@@ -70,7 +72,7 @@ export default function AssessmentSection(){
       return (
         <NumberInputQuestion 
           key={q.id} 
-          answer={data.answers[Utils.getQuestionId(q.id)]} 
+          answer={answer} 
           assessment={data.assessment} 
           db={data.db}          
           question={q} 
