@@ -54,7 +54,8 @@ export class AssessApp extends Component {
         loader: async ({ params }) => {
           let assessmentData = await import('./data/assessments.json');
           return {
-            assessments: assessmentData.assessments
+            assessments: assessmentData.assessments,
+            db: db
           };
         }
       },{
