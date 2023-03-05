@@ -50,12 +50,18 @@ export class AssessApp extends Component {
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <Root />
+        element: <Root />,
+        loader: async ({ params }) => {
+          let assessmentData = await import('./data/assessments.json');
+          return {
+            assessments: assessmentData.assessments
+          };
+        }
       },{
         path: '/assessments/:aid/section/:sid',            
         element: <AssessmentSection />,
         loader: async ({ params }) => {
-          let assessmentData = await import('./data/assessments.json');          
+          let assessmentData = await import('./data/assessments.json');
           let answers = await db.getItem(Utils.getAssessmentId(params.aid));
           const aid = parseInt(params.aid);
           let section;
@@ -73,7 +79,7 @@ export class AssessApp extends Component {
           }          
           return {                
             answers: answers,
-            assessment: assessmentData[aid-1],
+            assessment: assessmentData.assessments[aid-1],
             db: db,
             section: section 
           };  
@@ -100,7 +106,7 @@ export class AssessApp extends Component {
           }   
           return {
             answers: answers,
-            assessment: assessmentData[aid-1],
+            assessment: assessmentData.assessments[aid-1],
             scoring: scoring
           }       
         }

@@ -1,9 +1,11 @@
-[{
-  "id": 1,
-  "name": "What's my Temperament?",  
-  "assessment": "temperaments.json"
-},{
-  "id": 2,
-  "name": "Spiritual Gifts Survey",  
-  "assessment": "spiritual_gifts.json"
-}]
+{
+  "assessments": [{
+    "id": 1,
+    "name": "What's my Temperament?",
+    "assessment": "temperaments.json"
+  }, {
+    "id": 2,
+    "name": "Spiritual Gifts Survey",
+    "assessment": "spiritual_gifts.json"
+  }]
+}

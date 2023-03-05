@@ -1,20 +1,21 @@
-import { Link } from "react-router-dom";
+import { 
+  Link, 
+  useLoaderData 
+} from "react-router-dom";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-
-import assessments from '../data/assessments.json';
-
-
 export default function Root() {
 
-  const assessmentItems = assessments.map((a) => {
+  const data = useLoaderData();
+
+  const assessmentItems = data.assessments.map((a) => {
     return (
-      <li key={`a-${a.id}`}><Link to={`assessments/${a.id}/section/1`}>{a.name}</Link></li>
+      <li key={`a-${a.id}`}>
+        <Link to={`assessments/${a.id}/section/1`}>{a.name}</Link>
+      </li>
     );
   });
 
