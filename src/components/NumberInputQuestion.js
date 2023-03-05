@@ -25,7 +25,7 @@ export function NumberInputQuestion(props){
       answers[questionId] = newValue; 
       
       props.db.setItem(assessmentId, answers).then(() => {        
-        console.debug(`Saved choice for question ${questionId} of assessment ${assessmentId}`);
+        console.info(`Saved choice for question ${questionId} of assessment ${assessmentId}`);
       }).catch((err) => {
         console.error(`Unable to save choice for question ${questionId} of assessment ${assessmentId}`);
       });
