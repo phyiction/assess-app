@@ -1,11 +1,19 @@
 {
-  "assessments": [{
-    "id": 1,
-    "name": "What's my Temperament?",
-    "assessment": "temperaments.json"
-  }, {
-    "id": 2,
-    "name": "Spiritual Gifts Survey",
-    "assessment": "spiritual_gifts.json"
-  }]
+  "assessments": [
+    {
+      "assessment": "temperaments.json",
+      "id": 1,
+      "name": "What's my Temperament?"
+    },
+    {
+      "assessment": "spiritual_gifts.json",
+      "id": 2,
+      "name": "Spiritual Gifts Survey"
+    },
+    {
+      "assessment": "eml_marriage_singleness.json",
+      "id": 3,
+      "name": "How Healthy is Your Ability to Lead Out of Your Marriage or Singleness"
+    }
+  ]
 }

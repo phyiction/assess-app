@@ -20,6 +20,9 @@ export default function AssessmentResults() {
     case 2:
       results = SpiritualGiftsAssessmentResults(data);
       break;
+    case 3:
+      results = EmlMarriageSinglenessAssessmentResults(data);
+      break;
     default:
        null;
   }
@@ -147,4 +150,99 @@ function SpiritualGiftsAssessmentResults(data){
       </Col>
     </Row>
   );
+}
+
+function getFrequencyMap(data){
+  return data.reduce((map, val) => {
+
+    if(val !== undefined){
+      if(map.has(val)){
+        map.set(val, map.get(val) + 1);
+      }else{
+        map.set(val, 1);
+      }
+    }
+
+    return map;
+  },new Map());
+}
+
+function emlTables(map, buckets, title){
+
+  let results = Object.assign([], buckets);
+  let iter = map.entries();
+  let next = iter.next();
+  while(!next.done){
+    const choice = parseInt(next.value[0]);
+    const freq = parseInt(next.value[1]);
+
+    results.forEach((r) => {
+      if(r.values.includes(choice)){
+        if(!r["total"]){
+          r["total"] = freq;
+        }else{
+          r["total"] += freq;
+        }
+      }
+    });
+    next = iter.next();
+  }
+
+  results.sort((a,b) => {
+    if(a["total"] < b["total"]){
+      return 1;
+    }else if(a["total"] == b["total"]){
+      return 0;
+    }else{
+      return -1;
+    }
+  });
+
+  if(map.size > 0){
+
+    const rows = results.map((r) => {
+      return (
+        <tr>
+          <td>{r.name}</td>
+          <td>{r.total}</td>
+        </tr>
+      );
+    });
+
+    return (
+      <div>
+        <h2>{title}</h2>
+        <table class="aa-table" width="50%">
+          <caption>{results[0].description}</caption>
+          <thead>
+            <tr>
+              <th>Bucket</th>
+              <th>Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+          { rows }
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+}
+
+function EmlMarriageSinglenessAssessmentResults(data){
+
+  // compute frequency for marriage section
+  const marriedAnswers = [1,2,3,4,5,6,7,8,9,10].map((x) => data.answers[Utils.getQuestionId(x)]);
+  const marriedFreq = getFrequencyMap(marriedAnswers);
+
+  // compute frequency for singles section
+  const singleAnswers = [11,12,13,14,15,16,17,18,19,20].map((x) => data.answers[Utils.getQuestionId(x)]);
+  const singleFreq = getFrequencyMap(singleAnswers);
+
+  return (
+    <Row>
+      { emlTables(marriedFreq, data.scoring.buckets, "Leading out of your Marriage") }
+      { emlTables(singleFreq, data.scoring.buckets, "Leading out of your Singleness") }
+    </Row>
+  )
 }

@@ -21,7 +21,7 @@ table.aa-table {
   border: solid 1px #666;
 }
 
-.aa-table tr:nth-child(odd){
+.aa-table tbody tr:nth-child(odd){
   background: #EFEFEF;
 }
 

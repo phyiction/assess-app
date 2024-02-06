@@ -1,0 +1,114 @@
+{
+  "assessment": {
+    "sections": [
+      {
+        "directions": [          
+          "Leading Out of Your Marriage"
+        ],
+        "id": 1,
+        "nextSection": 2,
+        "prevSection": null,
+        "questions": [
+          {
+            "id": 1,
+            "question": "I see my marriage as a prophetic sign of God's love for the church and the world."
+          },
+          {
+            "id": 2,
+            "question": "I consider the quality and integrity of my marriage as the most important gospel message I preach."
+          },
+          {
+            "id": 3,
+            "question": "I place the highest priority on investing time and energy to build a healthy marriage that reveals Christ's love to the church and the world."
+          },
+          {
+            "id": 4,
+            "question": "I experience a direct connection between my oneness with Jesus and my oneness with my spouse."
+          },
+          {
+            "id": 5,
+            "question": "A key factor for me in discerning God's will in major ministry initiatives is the impact it will have on my marriage."
+          },
+          {
+            "id": 6,
+            "question": "I am aware of how issues from my family of origin impact my ability to be emotionally available in a healthy way to my spouse as well as those I serve."
+          },
+          {
+            "id": 7,
+            "question": "I do not overfunction as a leader at the expense of my marriage."
+          },
+          {
+            "id": 8,
+            "question": "I make what is important to my spouse important to me regardless of my leadership responsibilities."
+          },
+          {
+            "id": 9,
+            "question": "The fruit I bear in ministry overflows out of the richness of my marriage."
+          },
+          {
+            "id": 10,
+            "question": "I am comfortable articulating a biblical vision for marrieds and singles on how each serves to bear witness to God's love."
+          }
+        ]
+      },
+      {
+        "directions": [          
+          "Leading Out of Your Singleness"
+        ],
+        "id": 2,
+        "nextSection": null,
+        "prevSection": 1,
+        "questions": [{
+          "id": 11,
+          "question": "I see my singleness as a prophetic sign of God's love for the church and the world."
+        },{
+          "id": 12,
+          "question": "I believe the quality and integrity of my singleness is the most important gospel message I preach."
+        },{
+          "id": 13,
+          "question": "I place the highest priority on investing time and energy to build a healthy singleness that reveals Christ's love to the church and the world."
+        },{
+          "id": 14,
+          "question": "I experience a direct connection between my oneness with Jesus and my relationships with close friends and family."
+        },{
+          "id": 15,
+          "question": "A key factor for me is discerning God's will in major ministry initiatives is the impact it will have on my ability to live a whole, rich, and healthy single life."
+        },{
+          "id": 16,
+          "question": "I am aware how issues from my family of origin impact my ability to be emotionally available in a healthy way to my close friends, family, and those I serve."
+        },{
+          "id": 17,
+          "question": "I do not overfunction as a leader at the eexpense of living a healthy and balanced single life."
+        },{
+          "id": 18,
+          "question": "I make what is important to my close friends and family important to me regardless of my leadership responsibilities"
+        },{
+          "id": 19,
+          "question": "The fruit I bear in ministry overflows out of the richness of my close relationships with family and friends."
+        },{
+          "id": 20,
+          "question": "I am comfortable articulting a biblical vision for marrieds and singles on how each serves uniquely to bear witness to God's love."
+        }]
+      }
+    ]
+  },
+  "scoring": {
+    "buckets": [
+      {
+        "name": "Ones and Twos",
+        "values": [1, 2],
+        "description": "You porbably have not given much thought to what it might mean - theologically or practically - to lead out of your marriage or singleness."        
+      },
+      {
+        "name": "Twos and Threes",
+        "values": [2, 3],
+        "description": "You may be leading out of marriage or singleness to some degree, but still lack a rich theological vision or practical applications of the truths in this chapter. Consider further biblical study or talk to people from intentional and monastic communities who have thought deeply about marriage and singleness as vocations."        
+      },
+      {
+        "name": "Fours and Fives",
+        "values": [4, 5],
+        "description": "You are leading out of your singleness or marriage."        
+      }
+    ]
+  }
+}
