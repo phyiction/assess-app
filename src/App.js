@@ -2,42 +2,39 @@ import { Component, StrictMode } from 'react';
 
 import { createRoot } from 'react-dom/client';
 
-import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Container from 'react-bootstrap/Container';
 
-import {
-  createBrowserRouter,
-  Link,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
 
-import localforage from "localforage/src/localforage.js";
+import localforage from 'localforage/src/localforage.js';
 
 import AssessmentResults from './pages/AssessmentResults.js';
 import AssessmentSection from './pages/AssessmentSection.js';
-import Root from "./pages/Root.js";
+import Root from './pages/Root.js';
 
 import Utils from './components/Utils.js';
 
 import './scss/styles.scss';
 
-export function createAsessAppRoutes(db){
+export function createAsessAppRoutes(db) {
   return [
     {
-      path: "/",
+      path: '/',
       element: <Root />,
       loader: async ({ params }) => {
         let assessmentData = await import('./data/assessments.json');
         return {
           assessments: assessmentData.assessments,
-          db: db
+          db: db,
         };
-      }
-    },{
+      },
+    },
+    {
       path: '/assessments/:aid/section/:sid',
       element: <AssessmentSection />,
       loader: async ({ params }) => {
@@ -45,30 +42,40 @@ export function createAsessAppRoutes(db){
         let answers = await db.getItem(Utils.getAssessmentId(params.aid));
         const aid = parseInt(params.aid);
         let section;
-        switch(aid){
+        switch (aid) {
           case 1:
-            let temperamentsAssessmentData = await import('./data/temperaments.json');
-            section = temperamentsAssessmentData.assessment.sections[params.sid-1];
+            let temperamentsAssessmentData = await import(
+              './data/temperaments.json'
+            );
+            section =
+              temperamentsAssessmentData.assessment.sections[params.sid - 1];
             break;
           case 2:
-            let spiritualGiftsAssessmentData = await import('./data/spiritual_gifts.json');
-            section = spiritualGiftsAssessmentData.assessment.sections[params.sid-1];
+            let spiritualGiftsAssessmentData = await import(
+              './data/spiritual_gifts.json'
+            );
+            section =
+              spiritualGiftsAssessmentData.assessment.sections[params.sid - 1];
             break;
           case 3:
-            let emlMarriageSinglenessData = await import('./data/eml_marriage_singleness.json');
-            section = emlMarriageSinglenessData.assessment.sections[params.sid-1];
+            let emlMarriageSinglenessData = await import(
+              './data/eml_marriage_singleness.json'
+            );
+            section =
+              emlMarriageSinglenessData.assessment.sections[params.sid - 1];
             break;
           default:
             section = null;
         }
         return {
           answers: answers,
-          assessment: assessmentData.assessments[aid-1],
+          assessment: assessmentData.assessments[aid - 1],
           db: db,
-          section: section
+          section: section,
         };
-      }
-    },{
+      },
+    },
+    {
       path: '/assessments/:aid/results',
       element: <AssessmentResults />,
       loader: async ({ params }) => {
@@ -76,17 +83,23 @@ export function createAsessAppRoutes(db){
         let answers = await db.getItem(Utils.getAssessmentId(params.aid));
         const aid = parseInt(params.aid);
         let scoring;
-        switch(aid){
+        switch (aid) {
           case 1:
-            let temperamentsAssessmentData = await import('./data/temperaments.json');
+            let temperamentsAssessmentData = await import(
+              './data/temperaments.json'
+            );
             scoring = temperamentsAssessmentData.scoring;
             break;
           case 2:
-            let spiritualGiftsAssessmentData = await import('./data/spiritual_gifts.json');
+            let spiritualGiftsAssessmentData = await import(
+              './data/spiritual_gifts.json'
+            );
             scoring = spiritualGiftsAssessmentData.scoring;
             break;
           case 3:
-            let emlMarriageSinglenessAssessmentData = await import('./data/eml_marriage_singleness.json');
+            let emlMarriageSinglenessAssessmentData = await import(
+              './data/eml_marriage_singleness.json'
+            );
             scoring = emlMarriageSinglenessAssessmentData.scoring;
             break;
           default:
@@ -94,37 +107,35 @@ export function createAsessAppRoutes(db){
         }
         return {
           answers: answers,
-          assessment: assessmentData.assessments[aid-1],
-          scoring: scoring
-        }
-      }
-    }
+          assessment: assessmentData.assessments[aid - 1],
+          scoring: scoring,
+        };
+      },
+    },
   ];
 }
 
 export class AssessApp extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.db = localforage.createInstance({
-      name: "assessments"
-    });    
+      name: 'assessments',
+    });
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const db = this.db;
     db.ready().then(() => {
       console.info(`localforage driver is ${db.driver()}`);
-    });    
+    });
   }
 
-  render(){
-
+  render() {
     const props = this.props;
 
-    const router = createBrowserRouter(createAsessAppRoutes(this.db),{
-      basename: '/projects/assess-app/'
+    const router = createBrowserRouter(createAsessAppRoutes(this.db), {
+      basename: '/projects/assess-app/',
     });
 
     return (
@@ -137,14 +148,16 @@ export class AssessApp extends Component {
             <Container>
               <Navbar.Brand href="/">Assessments</Navbar.Brand>
             </Container>
-          </Navbar> 
+          </Navbar>
           <RouterProvider router={router} />
           <footer className="footer">
             <div className="container text-center">
-              <small className="small text-muted">
+              <div className="small text-muted">
                 Version {props.version} &bull; &nbsp;
-                <a href="https://github.com/phyiction/assess-app/issues/new">Report Bug</a>
-              </small>
+                <a href="https://github.com/phyiction/assess-app/issues/new">
+                  Report Bug
+                </a>
+              </div>
             </div>
           </footer>
         </ThemeProvider>

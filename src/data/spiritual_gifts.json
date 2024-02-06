@@ -1,350 +1,354 @@
 {
   "assessment": {
-    "sections": [{
-      "id": 1,
-      "directions": [
-        "This is not a test, so there are no wrong answers. The Spiritual Gifts Survey consists of 80 statements. Some items reflect concrete actions; other items are descriptive traits; and still others are statements of belief."
-      ],
-      "prevSection": null,
-      "nextSection": null,
-      "questions": [{
-          "id": 1,
-          "question": "I have the ability to organize ideas, resources, time, and people effectively."
-        },
-        {
-          "id": 2,
-          "question": "I am willing to study and prepare for the task of teaching."
-        },
-        {
-          "id": 3,
-          "question": "I am able to relate the truths of God to specific situations."
-        },
-        {
-          "id": 4,
-          "question": "I have a God-given ability to help others grow in their faith."
-        },
-        {
-          "id": 5,
-          "question": "I possess a special ability to communicate the truth of salvation."
-        },
-        {
-          "id": 6,
-          "question": "I have the ability to make critical decisions when necessary."
-        },
-        {
-          "id": 7,
-          "question": "I am sensitive to the hurts of people."
-        },
-        {
-          "id": 8,
-          "question": "I experience joy in meeting needs through sharing possessions."
-        },
-        {
-          "id": 9,
-          "question": "I enjoy studying."
-        },
-        {
-          "id": 10,
-          "question": "I have delivered God's message of warning and judgment."
-        },
-        {
-          "id": 11,
-          "question": "I am able to sense the true motivation of persons and movements."
-        },
-        {
-          "id": 12,
-          "question": "I have a special ability to trust God in difficult situations."
-        },
-        {
-          "id": 13,
-          "question": "I have a strong desire to contribute to the establishment of new churches."
-        },
-        {
-          "id": 14,
-          "question": "I take action to meet physical and practical needs rather than merely talking about or planning to help."
-        },
-        {
-          "id": 15,
-          "question": "I enjoy entertaining guests in my home."
-        },
-        {
-          "id": 16,
-          "question": "I can adapt my guidance to fit the maturity of those working with me."
-        },
-        {
-          "id": 17,
-          "question": "I can delegate and assign meaningful work."
-        },
-        {
-          "id": 18,
-          "question": "I have an ability and desire to teach."
-        },
-        {
-          "id": 19,
-          "question": "I am usually able to analyze a situation correctly."
-        },
-        {
-          "id": 20,
-          "question": "I have a natural tendency to encourage others."
-        },
-        {
-          "id": 21,
-          "question": "I am willing to take the initiative in helping other Christians grow in their faith."
-        },
-        {
-          "id": 22,
-          "question": "I have an acute awareness of the emotions of other people, such as loneliness, pain, fear, and anger."
-        },
-        {
-          "id": 23,
-          "question": "I am a cheerful giver."
-        },
-        {
-          "id": 24,
-          "question": "I spend time digging into facts."
-        },
-        {
-          "id": 25,
-          "question": "I feel that have a message from God to deliver to others."
-        },
-        {
-          "id": 26,
-          "question": "I can recognize when a person is genuine/honest."
-        },
-        {
-          "id": 27,
-          "question": "I am a person of vision (a clear mental portrait of a preferable future given by God). I am able to communicate vision in such a way that others commit to making the vision a reality."
-        },
-        {
-          "id": 28,
-          "question": "I am willing to yield to God's will rather than question and waver."
-        },
-        {
-          "id": 29,
-          "question": "I would like to be more active in getting the gospel to people in other lands."
-        },
-        {
-          "id": 30,
-          "question": "It makes me happy to do things for people in need."
-        },
-        {
-          "id": 31,
-          "question": "I am successful in getting a group to do its work joyfully."
-        },
-        {
-          "id": 32,
-          "question": "I am able to make strangers feel at ease."
-        },
-        {
-          "id": 33,
-          "question": "I have the ability to plan learning approaches."
-        },
-        {
-          "id": 34,
-          "question": "I can identify those who need encouragement."
-        },
-        {
-          "id": 35,
-          "question": "I have trained Christians to be more obedient disciples of Christ."
-        },
-        {
-          "id": 36,
-          "question": "I am willing to do whatever it takes to see others come to Christ."
-        },
-        {
-          "id": 37,
-          "question": "I am attracted to people who are hurting."
-        },
-        {
-          "id": 38,
-          "question": "I am a generous giver."
-        },
-        {
-          "id": 39,
-          "question": "I am able to discover new truths."
-        },
-        {
-          "id": 40,
-          "question": "I have spiritual insights from Scripture concerning issues and people that compel me to speak out."
-        },
-        {
-          "id": 41,
-          "question": "I can sense when a person is acting in accord with God's will."
-        },
-        {
-          "id": 42,
-          "question": "I can trust in God even when things look dark."
-        },
-        {
-          "id": 43,
-          "question": "I can determine where God wants a group to go and help it get there."
-        },
-        {
-          "id": 44,
-          "question": "I have a strong desire to take the gospel to places where it has never been heard."
-        },
-        {
-          "id": 45,
-          "question": "I enjoy reaching out to new people in my church and community."
-        },
-        {
-          "id": 46,
-          "question": "I am sensitive to the needs of people."
-        },
-        {
-          "id": 47,
-          "question": "I have been able to make effective and efficient plans for accomplishing the goals of a group."
-        },
-        {
-          "id": 48,
-          "question": "I am often consulted when fellow Christians are struggling to make difficult decisions."
-        },
-        {
-          "id": 49,
-          "question": "I think about how I can comfort and encourage others in my congregation."
-        },
-        {
-          "id": 50,
-          "question": "I am able to give spiritual direction to others."
-        },
-        {
-          "id": 51,
-          "question": "I am able to present the gospel to lost persons in such a way that they accept the Lord and His salvation."
-        },
-        {
-          "id": 52,
-          "question": "I possess an unusual capacity to understand the feelings of those in distress."
-        },
-        {
-          "id": 53,
-          "question": "I have a strong sense of stewardship based on the recognition that God owns all things."
-        },
-        {
-          "id": 54,
-          "question": "I have delivered to other persons messages that have come directly from God."
-        },
-        {
-          "id": 55,
-          "question": "I can sense when a person is acting under God's leadership."
-        },
-        {
-          "id": 56,
-          "question": "I try to be in God's will continually and be available for His use."
-        },
-        {
-          "id": 57,
-          "question": "I feel that I should take the gospel to people who have different beliefs from me."
-        },
-        {
-          "id": 58,
-          "question": "I have an acute awareness of the physical needs of others"
-        },
-        {
-          "id": 59,
-          "question": "I am skilled in setting forth positive and precise steps of action."
-        },
-        {
-          "id": 60,
-          "question": "I like to meet visitors at church and make them feel welcome."
-        },
-        {
-          "id": 61,
-          "question": "I explain Scripture in such a way that others understand it."
-        },
-        {
-          "id": 62,
-          "question": "I can usually see spiritual solutions to problems."
-        },
-        {
-          "id": 63,
-          "question": "I welcome opportunities to help people who need comfort, consolation, encouragement, and counseling."
-        },
-        {
-          "id": 64,
-          "question": "I feel at ease in sharing Christ with nonbelievers."
-        },
-        {
-          "id": 65,
-          "question": "I can influence others to perform to their highest God-given potential."
-        },
-        {
-          "id": 66,
-          "question": "I recognize the signs of stress and distress in others."
-        },
-        {
-          "id": 67,
-          "question": "I desire to give generously and unpretentiously to worthwhile projects and ministries."
-        },
-        {
-          "id": 68,
-          "question": "I can organize facts into meaningful relationships."
-        },
-        {
-          "id": 69,
-          "question": "God gives me messages to deliver to His people."
-        },
-        {
-          "id": 70,
-          "question": "I am able to sense whether people are being honest when they tell of their religious experiences."
-        },
-        {
-          "id": 71,
-          "question": "I enjoy presenting the gospel to persons of other cultures and backgrounds."
-        },
-        {
-          "id": 72,
-          "question": "I enjoy doing little things that help people."
-        },
-        {
-          "id": 73,
-          "question": "I can give a clear, uncomplicated presentation."
-        },
-        {
-          "id": 74,
-          "question": "I have been able to apply biblical truth to the specific needs of my church."
-        },
-        {
-          "id": 75,
-          "question": "God has used me to encourage others to live Christlike lives."
-        },
-        {
-          "id": 76,
-          "question": "I have sensed the need to help other people become more effective in their ministries."
-        }, {
-          "id": 77,
-          "question": "I like to talk about Jesus to those who do not know Him."
-        },
-        {
-          "id": 78,
-          "question": "I have the ability to make strangers feel comfortable in my home."
-        },
-        {
-          "id": 79,
-          "question": "I have a wide range of study resources and know how to secure information."
-        },
-        {
-          "id": 80,
-          "question": "I feel assured that a situation will change for the glory of God even when the situation seems impossible."
-        }
-      ]
-    }]
+    "sections": [
+      {
+        "id": 1,
+        "directions": [
+          "This is not a test, so there are no wrong answers. The Spiritual Gifts Survey consists of 80 statements. Some items reflect concrete actions; other items are descriptive traits; and still others are statements of belief."
+        ],
+        "prevSection": null,
+        "nextSection": null,
+        "questions": [
+          {
+            "id": 1,
+            "question": "I have the ability to organize ideas, resources, time, and people effectively."
+          },
+          {
+            "id": 2,
+            "question": "I am willing to study and prepare for the task of teaching."
+          },
+          {
+            "id": 3,
+            "question": "I am able to relate the truths of God to specific situations."
+          },
+          {
+            "id": 4,
+            "question": "I have a God-given ability to help others grow in their faith."
+          },
+          {
+            "id": 5,
+            "question": "I possess a special ability to communicate the truth of salvation."
+          },
+          {
+            "id": 6,
+            "question": "I have the ability to make critical decisions when necessary."
+          },
+          {
+            "id": 7,
+            "question": "I am sensitive to the hurts of people."
+          },
+          {
+            "id": 8,
+            "question": "I experience joy in meeting needs through sharing possessions."
+          },
+          {
+            "id": 9,
+            "question": "I enjoy studying."
+          },
+          {
+            "id": 10,
+            "question": "I have delivered God's message of warning and judgment."
+          },
+          {
+            "id": 11,
+            "question": "I am able to sense the true motivation of persons and movements."
+          },
+          {
+            "id": 12,
+            "question": "I have a special ability to trust God in difficult situations."
+          },
+          {
+            "id": 13,
+            "question": "I have a strong desire to contribute to the establishment of new churches."
+          },
+          {
+            "id": 14,
+            "question": "I take action to meet physical and practical needs rather than merely talking about or planning to help."
+          },
+          {
+            "id": 15,
+            "question": "I enjoy entertaining guests in my home."
+          },
+          {
+            "id": 16,
+            "question": "I can adapt my guidance to fit the maturity of those working with me."
+          },
+          {
+            "id": 17,
+            "question": "I can delegate and assign meaningful work."
+          },
+          {
+            "id": 18,
+            "question": "I have an ability and desire to teach."
+          },
+          {
+            "id": 19,
+            "question": "I am usually able to analyze a situation correctly."
+          },
+          {
+            "id": 20,
+            "question": "I have a natural tendency to encourage others."
+          },
+          {
+            "id": 21,
+            "question": "I am willing to take the initiative in helping other Christians grow in their faith."
+          },
+          {
+            "id": 22,
+            "question": "I have an acute awareness of the emotions of other people, such as loneliness, pain, fear, and anger."
+          },
+          {
+            "id": 23,
+            "question": "I am a cheerful giver."
+          },
+          {
+            "id": 24,
+            "question": "I spend time digging into facts."
+          },
+          {
+            "id": 25,
+            "question": "I feel that have a message from God to deliver to others."
+          },
+          {
+            "id": 26,
+            "question": "I can recognize when a person is genuine/honest."
+          },
+          {
+            "id": 27,
+            "question": "I am a person of vision (a clear mental portrait of a preferable future given by God). I am able to communicate vision in such a way that others commit to making the vision a reality."
+          },
+          {
+            "id": 28,
+            "question": "I am willing to yield to God's will rather than question and waver."
+          },
+          {
+            "id": 29,
+            "question": "I would like to be more active in getting the gospel to people in other lands."
+          },
+          {
+            "id": 30,
+            "question": "It makes me happy to do things for people in need."
+          },
+          {
+            "id": 31,
+            "question": "I am successful in getting a group to do its work joyfully."
+          },
+          {
+            "id": 32,
+            "question": "I am able to make strangers feel at ease."
+          },
+          {
+            "id": 33,
+            "question": "I have the ability to plan learning approaches."
+          },
+          {
+            "id": 34,
+            "question": "I can identify those who need encouragement."
+          },
+          {
+            "id": 35,
+            "question": "I have trained Christians to be more obedient disciples of Christ."
+          },
+          {
+            "id": 36,
+            "question": "I am willing to do whatever it takes to see others come to Christ."
+          },
+          {
+            "id": 37,
+            "question": "I am attracted to people who are hurting."
+          },
+          {
+            "id": 38,
+            "question": "I am a generous giver."
+          },
+          {
+            "id": 39,
+            "question": "I am able to discover new truths."
+          },
+          {
+            "id": 40,
+            "question": "I have spiritual insights from Scripture concerning issues and people that compel me to speak out."
+          },
+          {
+            "id": 41,
+            "question": "I can sense when a person is acting in accord with God's will."
+          },
+          {
+            "id": 42,
+            "question": "I can trust in God even when things look dark."
+          },
+          {
+            "id": 43,
+            "question": "I can determine where God wants a group to go and help it get there."
+          },
+          {
+            "id": 44,
+            "question": "I have a strong desire to take the gospel to places where it has never been heard."
+          },
+          {
+            "id": 45,
+            "question": "I enjoy reaching out to new people in my church and community."
+          },
+          {
+            "id": 46,
+            "question": "I am sensitive to the needs of people."
+          },
+          {
+            "id": 47,
+            "question": "I have been able to make effective and efficient plans for accomplishing the goals of a group."
+          },
+          {
+            "id": 48,
+            "question": "I am often consulted when fellow Christians are struggling to make difficult decisions."
+          },
+          {
+            "id": 49,
+            "question": "I think about how I can comfort and encourage others in my congregation."
+          },
+          {
+            "id": 50,
+            "question": "I am able to give spiritual direction to others."
+          },
+          {
+            "id": 51,
+            "question": "I am able to present the gospel to lost persons in such a way that they accept the Lord and His salvation."
+          },
+          {
+            "id": 52,
+            "question": "I possess an unusual capacity to understand the feelings of those in distress."
+          },
+          {
+            "id": 53,
+            "question": "I have a strong sense of stewardship based on the recognition that God owns all things."
+          },
+          {
+            "id": 54,
+            "question": "I have delivered to other persons messages that have come directly from God."
+          },
+          {
+            "id": 55,
+            "question": "I can sense when a person is acting under God's leadership."
+          },
+          {
+            "id": 56,
+            "question": "I try to be in God's will continually and be available for His use."
+          },
+          {
+            "id": 57,
+            "question": "I feel that I should take the gospel to people who have different beliefs from me."
+          },
+          {
+            "id": 58,
+            "question": "I have an acute awareness of the physical needs of others"
+          },
+          {
+            "id": 59,
+            "question": "I am skilled in setting forth positive and precise steps of action."
+          },
+          {
+            "id": 60,
+            "question": "I like to meet visitors at church and make them feel welcome."
+          },
+          {
+            "id": 61,
+            "question": "I explain Scripture in such a way that others understand it."
+          },
+          {
+            "id": 62,
+            "question": "I can usually see spiritual solutions to problems."
+          },
+          {
+            "id": 63,
+            "question": "I welcome opportunities to help people who need comfort, consolation, encouragement, and counseling."
+          },
+          {
+            "id": 64,
+            "question": "I feel at ease in sharing Christ with nonbelievers."
+          },
+          {
+            "id": 65,
+            "question": "I can influence others to perform to their highest God-given potential."
+          },
+          {
+            "id": 66,
+            "question": "I recognize the signs of stress and distress in others."
+          },
+          {
+            "id": 67,
+            "question": "I desire to give generously and unpretentiously to worthwhile projects and ministries."
+          },
+          {
+            "id": 68,
+            "question": "I can organize facts into meaningful relationships."
+          },
+          {
+            "id": 69,
+            "question": "God gives me messages to deliver to His people."
+          },
+          {
+            "id": 70,
+            "question": "I am able to sense whether people are being honest when they tell of their religious experiences."
+          },
+          {
+            "id": 71,
+            "question": "I enjoy presenting the gospel to persons of other cultures and backgrounds."
+          },
+          {
+            "id": 72,
+            "question": "I enjoy doing little things that help people."
+          },
+          {
+            "id": 73,
+            "question": "I can give a clear, uncomplicated presentation."
+          },
+          {
+            "id": 74,
+            "question": "I have been able to apply biblical truth to the specific needs of my church."
+          },
+          {
+            "id": 75,
+            "question": "God has used me to encourage others to live Christlike lives."
+          },
+          {
+            "id": 76,
+            "question": "I have sensed the need to help other people become more effective in their ministries."
+          },
+          {
+            "id": 77,
+            "question": "I like to talk about Jesus to those who do not know Him."
+          },
+          {
+            "id": 78,
+            "question": "I have the ability to make strangers feel comfortable in my home."
+          },
+          {
+            "id": 79,
+            "question": "I have a wide range of study resources and know how to secure information."
+          },
+          {
+            "id": 80,
+            "question": "I feel assured that a situation will change for the glory of God even when the situation seems impossible."
+          }
+        ]
+      }
+    ]
   },
   "scoring": {
-    "leadership": [6,16,27,43,65],
-    "administration": [1,17,31,47,59],
-    "teaching": [2,18,33,61,73],
-    "knowledge": [9,24,39,68,79],
-    "wisdom": [3,19,48,62,74],
-    "prophecy": [10,25,40,54,69],
-    "discernment": [11,26,41,55,70],
-    "exhortation": [20,34,49,63,75],
-    "shepherding": [4,21,35,50,76],
-    "faith": [12,28,42,56,80],
-    "evangelism": [5,36,51,64,77],
-    "apostleship": [13,29,44,57,71],
-    "service/helps": [14,30,46,58,72],
-    "mercy": [7,22,37,52,66],
-    "giving": [8,23,38,53,67],
-    "hospitality": [15,32,45,60,78]
+    "leadership": [6, 16, 27, 43, 65],
+    "administration": [1, 17, 31, 47, 59],
+    "teaching": [2, 18, 33, 61, 73],
+    "knowledge": [9, 24, 39, 68, 79],
+    "wisdom": [3, 19, 48, 62, 74],
+    "prophecy": [10, 25, 40, 54, 69],
+    "discernment": [11, 26, 41, 55, 70],
+    "exhortation": [20, 34, 49, 63, 75],
+    "shepherding": [4, 21, 35, 50, 76],
+    "faith": [12, 28, 42, 56, 80],
+    "evangelism": [5, 36, 51, 64, 77],
+    "apostleship": [13, 29, 44, 57, 71],
+    "service/helps": [14, 30, 46, 58, 72],
+    "mercy": [7, 22, 37, 52, 66],
+    "giving": [8, 23, 38, 53, 67],
+    "hospitality": [15, 32, 45, 60, 78]
   }
 }
