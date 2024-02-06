@@ -149,7 +149,6 @@ function SpiritualGiftsAssessmentResults(data) {
 }
 
 function EmlMarriageSinglenessAssessmentResults(data) {
-
   function renderResults(map, buckets, title) {
     let results = structuredClone(buckets);
     let iter = map.entries();
@@ -193,7 +192,7 @@ function EmlMarriageSinglenessAssessmentResults(data) {
       return (
         <div>
           <h2>{title}</h2>
-          <table className="aa-table">          
+          <table className="aa-table">
             <thead>
               <tr>
                 <th>Bucket</th>
