@@ -169,4 +169,4 @@ export class AssessApp extends Component {
 // Assumes HTML template has an element with an id set to 'root'
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<AssessApp version="0.0.3" />);
+root.render(<AssessApp version="0.0.4" />);
