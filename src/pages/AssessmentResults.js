@@ -170,12 +170,18 @@ function EmlMarriageSinglenessAssessmentResults(data) {
     }
 
     results.sort((a, b) => {
-      if (a['total'] < b['total']) {
-        return 1;
-      } else if (a['total'] == b['total']) {
-        return 0;
-      } else {
+      if ('total' in a && 'total' in b) {
+        if (a['total'] < b['total']) {
+          return 1;
+        } else if (a['total'] == b['total']) {
+          return 0;
+        } else {
+          return -1;
+        }
+      } else if ('total' in a) {
         return -1;
+      } else {
+        return 1;
       }
     });
 
