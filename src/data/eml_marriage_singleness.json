@@ -2,7 +2,10 @@
   "assessment": {
     "sections": [
       {
-        "directions": ["Leading Out of Your Marriage"],
+        "directions": [
+          "Leading Out of Your Marriage",
+          "Use the list of statements that follow to do a brief assessment on your ability to lead out of your marriage or singleness."
+        ],
         "id": 1,
         "nextSection": 2,
         "prevSection": null,
@@ -50,7 +53,10 @@
         ]
       },
       {
-        "directions": ["Leading Out of Your Singleness"],
+        "directions": [
+          "Leading Out of Your Singleness",
+          "Use the list of statements that follow to do a brief assessment on your ability to lead out of your marriage or singleness."
+        ],
         "id": 2,
         "nextSection": null,
         "prevSection": 1,

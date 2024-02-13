@@ -64,6 +64,12 @@ export function createAsessAppRoutes(db) {
             section =
               emlMarriageSinglenessData.assessment.sections[params.sid - 1];
             break;
+          case 4:
+            let emlLovingUnionData = await import(
+              './data/eml_loving_union.json'
+            );
+            section = emlLovingUnionData.assessment.sections[params.sid - 1];
+            break;
           default:
             section = null;
         }
@@ -101,6 +107,12 @@ export function createAsessAppRoutes(db) {
               './data/eml_marriage_singleness.json'
             );
             scoring = emlMarriageSinglenessAssessmentData.scoring;
+            break;
+          case 4:
+            let emlLovingUnionData = await import(
+              './data/eml_loving_union.json'
+            );
+            scoring = emlLovingUnionData.scoring;
             break;
           default:
             scoring = null;
@@ -169,4 +181,4 @@ export class AssessApp extends Component {
 // Assumes HTML template has an element with an id set to 'root'
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<AssessApp version="0.0.4" />);
+root.render(<AssessApp version="0.0.5" />);

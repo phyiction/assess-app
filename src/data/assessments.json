@@ -13,7 +13,12 @@
     {
       "assessment": "eml_marriage_singleness.json",
       "id": 3,
-      "name": "How Healthy is Your Ability to Lead Out of Your Marriage or Singleness"
+      "name": "EML: How Healthy is Your Ability to Lead Out of Your Marriage or Singleness"
+    },
+    {
+      "assessment": "eml_loving_union.json",
+      "id": 4,
+      "name": "EML: How Healthy is Your Experience of Loving Union with God?"
     }
   ]
 }

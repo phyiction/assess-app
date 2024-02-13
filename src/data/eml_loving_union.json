@@ -1,0 +1,75 @@
+{
+  "assessment": {
+    "sections": [
+      {
+        "directions": [
+          "Use the list of statements that follow to do a brief assessment of your loving union with God."
+        ],
+        "id": 1,
+        "nextSection": null,
+        "prevSection": null,
+        "questions": [
+          {
+            "id": 1,
+            "question": "My highest priority as a leader is to take time each day to remain in loving union with Jesus."
+          },
+          {
+            "id": 2,
+            "question": "I offer God full access to my interior life as I make decisions, interact with team members, and initiate new plans."
+          },
+          {
+            "id": 3,
+            "question": "I wait to say yes or no to new opportunities until I have sufficient time to prayerfully and carefully discern God's will."
+          },
+          {
+            "id": 4,
+            "question": "I routinely step away from leadership demands and make time to delight in God's gifts (lingering with friends over a meal, listening to a beautiful piece of music, enjoying a nature walk, watching a sunset, etc.)."
+          },
+          {
+            "id": 5,
+            "question": "I have a dedicated and regular practice of meditating on Scripture in order to commune with and be transformed by Jesus."
+          },
+          {
+            "id": 6,
+            "question": "I regularly set aside time for experiences of solitude and silence that enable me to be still and undistracted in God's presence."
+          },
+          {
+            "id": 7,
+            "question": "I am relaxed, comfortable with, and prayerful about my limits (my available gifts, time, energy, knowledge) as well as the limits of those around me."
+          },
+          {
+            "id": 8,
+            "question": "When I become aware that I am anxious or feeling emotionally triggered in my leadership, I slow down to be with God, myself, and possibly spiritual companions."
+          },
+          {
+            "id": 9,
+            "question": "I maintain intentional spiritual rhythms and practices (Sabbath, prayer, community, reading, etc.) that enable me to delight in God regardless of the expectations, needs, or opportunities around me."
+          },
+          {
+            "id": 10,
+            "question": "I am routinely aware of and think about God during my waking hours - at work or at home and while doing routine tasks such as errands, exercising, eating, being with friends and family, etc."
+          }
+        ]
+      }
+    ]
+  },
+  "scoring": {
+    "buckets": [
+      {
+        "name": "Ones and Twos",
+        "values": [1, 2],
+        "description": "You are likely doing too much in your own power, perhaps more than God has asked you to do. You may be doing a number of leadership tasks without any thought of Jesus. Because you are overloaded and distracted, your prayer may feel like more of a duty than a delight."
+      },
+      {
+        "name": "Twos and Threes",
+        "values": [2, 3],
+        "description": "You are making progress, but likely are still out of balance, with insufficient being with God to sustain your doing for God. You understand Christian leadership is about enjoying communion with God as well as serving God."
+      },
+      {
+        "name": "Fours and Fives",
+        "values": [4, 5],
+        "description": "You are in a good place of rest and centeredness in your relationship with God. Your doing for God is fed and sustained by your being with God in a rhythm that works for your present leadership responsibilities."
+      }
+    ]
+  }
+}

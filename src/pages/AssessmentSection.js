@@ -60,13 +60,10 @@ export default function AssessmentSection() {
           </div>
         </div>
       );
-    } else if (data.assessment.id === 3) {
+    } else if ([3, 4].includes(data.assessment.id)) {
       additionalDirections = (
         <div>
           <p>
-            Use the list of statements that follow to do a brief assessment on
-            your ability to lead out of your marriage or singleness.
-            <br />
             Next to each statement, write down the number that best describes
             your response.
           </p>

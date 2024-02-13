@@ -20,7 +20,8 @@ export default function AssessmentResults() {
       results = SpiritualGiftsAssessmentResults(data);
       break;
     case 3:
-      results = EmlMarriageSinglenessAssessmentResults(data);
+    case 4:
+      results = EmlAssessmentResults(data);
       break;
     default:
       null;
@@ -148,7 +149,7 @@ function SpiritualGiftsAssessmentResults(data) {
   );
 }
 
-function EmlMarriageSinglenessAssessmentResults(data) {
+function EmlAssessmentResults(data) {
   function renderResults(map, buckets, title) {
     let results = structuredClone(buckets);
     let iter = map.entries();
@@ -213,27 +214,26 @@ function EmlMarriageSinglenessAssessmentResults(data) {
     }
   }
 
-  // compute frequency for marriage section
-  const marriedAnswers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
+  const section1Answers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     (x) => data.answers[Utils.getQuestionId(x)]
   );
-  const marriedFreq = Utils.getFrequencyMap(marriedAnswers);
+  const section1Freq = Utils.getFrequencyMap(section1Answers);
 
-  // compute frequency for singles section
-  const singleAnswers = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(
+  const section2Answers = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map(
     (x) => data.answers[Utils.getQuestionId(x)]
   );
-  const singleFreq = Utils.getFrequencyMap(singleAnswers);
+  const section2Freq = Utils.getFrequencyMap(section2Answers);
+
+  const section1Title =
+    data.assessment.id === 3
+      ? 'Leading out of your Marriage'
+      : 'Understanding Your Loving Union Assessment';
 
   return (
     <Row>
+      {renderResults(section1Freq, data.scoring.buckets, section1Title)}
       {renderResults(
-        marriedFreq,
-        data.scoring.buckets,
-        'Leading out of your Marriage'
-      )}
-      {renderResults(
-        singleFreq,
+        section2Freq,
         data.scoring.buckets,
         'Leading out of your Singleness'
       )}
