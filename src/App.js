@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import Container from 'react-bootstrap/Container';
 
-import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import localforage from 'localforage/src/localforage.js';
 
@@ -173,7 +173,7 @@ export class AssessApp extends Component {
               <Navbar.Brand href="/">Assessments</Navbar.Brand>
             </Container>
           </Navbar>
-          <RouterProvider router={router} />
+          <RouterProvider router={router} future={{ v7_startTransition: true, v7_relativeSplatPath: true }} />
           <footer className="footer">
             <div className="container text-center">
               <div className="small text-muted">
@@ -193,4 +193,4 @@ export class AssessApp extends Component {
 // Assumes HTML template has an element with an id set to 'root'
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<AssessApp version="0.0.5" />);
+root.render(<AssessApp version="0.0.6" />);
