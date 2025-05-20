@@ -44,33 +44,8 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.(scss)$/,
-        use: [
-          {
-            // Creates `style` nodes from JS strings
-            loader: 'style-loader',
-          },
-          {
-            // Translates CSS into CommonJS
-            loader: 'css-loader',
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: () => [require('autoprefixer')],
-              },
-            },
-          },
-          // Compiles Sass to CSS
-          {
-            loader: 'sass-loader',
-            options: {
-              // Prefer `dart-sass`
-              implementation: require.resolve('sass'),
-            },
-          },
-        ],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.jsx?$/,

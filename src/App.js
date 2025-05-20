@@ -4,7 +4,6 @@ import { createRoot } from 'react-dom/client';
 
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
 
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Container from 'react-bootstrap/Container';
@@ -19,7 +18,8 @@ import Root from './pages/Root.js';
 
 import Utils from './components/Utils.js';
 
-import './scss/styles.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
 
 export function createAsessAppRoutes(db) {
   return [
