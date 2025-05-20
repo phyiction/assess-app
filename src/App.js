@@ -70,6 +70,12 @@ export function createAsessAppRoutes(db) {
             );
             section = emlLovingUnionData.assessment.sections[params.sid - 1];
             break;
+          case 5:
+            let antiochGiftsData = await import(
+              './data/antioch_spiritual_gifts.json'
+            );
+            section = antiochGiftsData.assessment.sections[params.sid - 1];
+            break;
           default:
             section = null;
         }
@@ -113,6 +119,12 @@ export function createAsessAppRoutes(db) {
               './data/eml_loving_union.json'
             );
             scoring = emlLovingUnionData.scoring;
+            break;
+          case 5:
+            let antiochGiftsData = await import(
+              './data/antioch_spiritual_gifts.json'
+            );
+            scoring = antiochGiftsData.scoring;
             break;
           default:
             scoring = null;

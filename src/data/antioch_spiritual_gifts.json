@@ -1,0 +1,685 @@
+{
+  "assessment": {
+    "sections": [
+      {
+        "id": 1,
+        "directions": [
+          "Scripture states that every believer is to be \"equipped for the work of service, to the building up of the body of Christ until we all attain to the unity of the faith, and of the knowledge of the Son of God, to a mature man, to the measure of the stature which belongs to the fulness of Christ.\" (Eph. 4:12, 13)",
+          "Following is a tool that we have developed to help you assess your strengths and giftings, more fully understand the passions or dreams that God has given you, and effectively utilize them in the Body of Christ."
+        ],
+        "prevSection": null,
+        "nextSection": null,
+        "questions": [
+          {
+            "id": 1,
+            "question": "I like to organize people, tasks, and events."
+          },
+          {
+            "id": 2,
+            "question": "I would like to start churches in places where they do not presently exist."
+          },
+          {
+            "id": 3,
+            "question": "I enjoy working creatively with wood, cloth, paint, metal, glass, or other materials."
+          },
+          {
+            "id": 4,
+            "question": "I enjoy challenging people's perspective of God by using various forms of art."
+          },
+          {
+            "id": 5,
+            "question": "I can readily distinguish between spiritual truth and error, good and evil."
+          },
+          {
+            "id": 6,
+            "question": "I tend to see the potential in people."
+          },
+          {
+            "id": 7,
+            "question": "I communiate the gospel to others with clarity and effectiveness."
+          },
+          {
+            "id": 8,
+            "question": "I find it natural and easy to trust God to answer my prayers."
+          },
+          {
+            "id": 9,
+            "question": "I give liberally and joyfully to people in financial need or to projects requiring support."
+          },
+          {
+            "id": 10,
+            "question": "I enjoy working behind the scenes to support the work of others."
+          },
+          {
+            "id": 11,
+            "question": "I view my home as a place to minister to people in need."
+          },
+          {
+            "id": 12,
+            "question": "I take prayer requests form others and consistently pray for them."
+          },
+          {
+            "id": 13,
+            "question": "I am approached by people who want to know my perspective on a particular passage or biblical truth."
+          },
+          {
+            "id": 14,
+            "question": "I am able to motivate others to accomplish a goal."
+          },
+          {
+            "id": 15,
+            "question": "I empathize with hurting people and desire to help in their healing process."
+          },
+          {
+            "id": 16,
+            "question": "I can speak in a way that results in conviction and change in the lives of others."
+          },
+          {
+            "id": 17,
+            "question": "I enjoy spending time nurturing and caring for others."
+          },
+          {
+            "id": 18,
+            "question": "I am able to communicate God's word effectively."
+          },
+          {
+            "id": 19,
+            "question": "I am often sought out by others for advice about spiritual or personal matters."
+          },
+          {
+            "id": 20,
+            "question": "Others can point to specific instances where my prayers have resulted in visible miracles."
+          },
+          {
+            "id": 21,
+            "question": "In the name of the Lord, I have been used in curing illnesses instantaneously."
+          },
+          {
+            "id": 22,
+            "question": "I have spoken in tongues."
+          },
+          {
+            "id": 23,
+            "question": "Sometimes when a person speaks in tongues, I get an idea about what God is saying."
+          },
+          {
+            "id": 24,
+            "question": "I am careful, thorough, and skilled at managing details."
+          },
+          {
+            "id": 25,
+            "question": "I am attracted to the idea of serving in another country or ethnic community."
+          },
+          {
+            "id": 26,
+            "question": "I am skilled in working with different kinds of tools."
+          },
+          {
+            "id": 27,
+            "question": "I enjoy developing and using my artistic skills (art, drama, music, photography, etc.)."
+          },
+          {
+            "id": 28,
+            "question": "I frequently am able to judge a person’s character based upon first impressions."
+          },
+          {
+            "id": 29,
+            "question": "I enjoy reassuring and strengthening those who are discouraged."
+          },
+          {
+            "id": 30,
+            "question": "I consistently look for opportunities to build relationships with non-Christians."
+          },
+          {
+            "id": 31,
+            "question": "I have confidence in God’s continuing provision and help, even in difficult times."
+          },
+          {
+            "id": 32,
+            "question": "I give more than a tithe so that kingdom work can be accomplished."
+          },
+          {
+            "id": 33,
+            "question": "I enjoy doing routine tasks that support the ministry."
+          },
+          {
+            "id": 34,
+            "question": "I enjoy meeting new people and helping them feel welcomed."
+          },
+          {
+            "id": 35,
+            "question": "I enjoy praying for long periods of time and receive leadings as to what God wants me to pray."
+          },
+          {
+            "id": 36,
+            "question": "I receive information from the Spirit that I did not acquire through natural means."
+          },
+          {
+            "id": 37,
+            "question": "I am able to influence others in order to achieve a vision/vision."
+          },
+          {
+            "id": 38,
+            "question": "I can patiently support those going through painful experiences as they try to stabilize their lives."
+          },
+          {
+            "id": 39,
+            "question": "I feel responsible to confront others with the truth."
+          },
+          {
+            "id": 40,
+            "question": "I have compassion for wandering believers and want to protect them."
+          },
+          {
+            "id": 41,
+            "question": "I can spend time in study knowing that presenting truth will make a difference in the lives of people."
+          },
+          {
+            "id": 42,
+            "question": "I can often find simple, practical solutions in the midst of conflict or confusion."
+          },
+          {
+            "id": 43,
+            "question": "God has used me to perform supernatural signs and wonders."
+          },
+          {
+            "id": 44,
+            "question": "I enjoy praying for sick people because I know that many of them will be healed as a result."
+          },
+          {
+            "id": 45,
+            "question": "I have spoken an immediate message of God to His people in a language I have never learned."
+          },
+          {
+            "id": 46,
+            "question": "I  have interpreted tongues with the result that the Body of Christ was edified, exhorted or comforted."
+          },
+          {
+            "id": 47,
+            "question": "I can clarify goals and develop strategies or plans to accomplish them."
+          },
+          {
+            "id": 48,
+            "question": "I am willing to take an active part in starting a new church."
+          },
+          {
+            "id": 49,
+            "question": "I enjoy making things for use in ministry"
+          },
+          {
+            "id": 50,
+            "question": "I help people understand themselves, their relationships, and God better through artistic expressions."
+          },
+          {
+            "id": 51,
+            "question": "I can see through insincerity or deceit before it is evident to others."
+          },
+          {
+            "id": 52,
+            "question": "I give hope to others by directing them to the promises of God."
+          },
+          {
+            "id": 53,
+            "question": "I am effective at adapting the gospel message so that it connects with an individual’s felt need."
+          },
+          {
+            "id": 54,
+            "question": "I can move forward in spite of opposition or lack of support when I sense God’s blessing on an undertaking."
+          },
+          {
+            "id": 55,
+            "question": "I manage my money well in order to free more of it for giving."
+          },
+          {
+            "id": 56,
+            "question": "I willingly take on a variety of odd jobs around the church to meet the needs of others."
+          },
+          {
+            "id": 57,
+            "question": "I genuinely believe the Lord directs strangers to me who need to get connected to others."
+          },
+          {
+            "id": 58,
+            "question": "I often see specific results in direct response to my prayers."
+          },
+          {
+            "id": 59,
+            "question": "I am committed, and schedule blocks of time for reading and studying scripture, to understand biblical truth fully and accurately."
+          },
+          {
+            "id": 60,
+            "question": "I can adjust my leadership style to bring out the best in others."
+          },
+          {
+            "id": 61,
+            "question": "I enjoy helping people sometimes regarded as undeserving or beyond help."
+          },
+          {
+            "id": 62,
+            "question": "I boldly expose cultural trends, teachings, or events which contradict biblical principles."
+          },
+          {
+            "id": 63,
+            "question": "I like to provide guidance for the whole person – relationally, emotionally, spiritually, etc."
+          },
+          {
+            "id": 64,
+            "question": "I pay close attention to the words, phrases, and intent of those who teach."
+          },
+          {
+            "id": 65,
+            "question": "I can easily select the most effective course of action from among several alternatives."
+          },
+          {
+            "id": 66,
+            "question": "God regularly seems to do impossible things in my life."
+          },
+          {
+            "id": 67,
+            "question": "Others have told me that God healed them of emotional problems when I ministered to them."
+          },
+          {
+            "id": 68,
+            "question": "I can speak to God in a language I have never learned."
+          },
+          {
+            "id": 69,
+            "question": "I have prayed that I may interpret if someone begins speaking in tongues."
+          },
+          {
+            "id": 70,
+            "question": "I can identify and effectively use the resources needed to accomplish tasks."
+          },
+          {
+            "id": 71,
+            "question": "I can adapt well to different cultures and surroundings."
+          },
+          {
+            "id": 72,
+            "question": "I can visualize how something should be designed before I create it."
+          },
+          {
+            "id": 73,
+            "question": "I like finding new and fresh ways of communicating God’s truth."
+          },
+          {
+            "id": 74,
+            "question": "I can sense when demonic forces are at work in a person or situation."
+          },
+          {
+            "id": 75,
+            "question": "I reassure those who need to take courageous action in their faith, family, or life."
+          },
+          {
+            "id": 76,
+            "question": "I invite unbelievers to accept Christ as their Savior."
+          },
+          {
+            "id": 77,
+            "question": "I trust God in circumstances where success cannot be guaranteed by human effort alone."
+          },
+          {
+            "id": 78,
+            "question": "I am challenged to limit my lifestyle in order to give away a higher percentage of my income."
+          },
+          {
+            "id": 79,
+            "question": "I see spiritual significance in doing practical tasks."
+          },
+          {
+            "id": 80,
+            "question": "I like to create a place where people do not feel that they are alone."
+          },
+          {
+            "id": 81,
+            "question": "I pray with confidence because I know that God works in response to prayer."
+          },
+          {
+            "id": 82,
+            "question": "I confidently share my knowledge and insights with others."
+          },
+          {
+            "id": 83,
+            "question": "I set goals and manage people and resources effectively to accomplish them."
+          },
+          {
+            "id": 84,
+            "question": "I have great compassion for hurting people."
+          },
+          {
+            "id": 85,
+            "question": "I see most actions as right or wrong, and feel the need to correct the wrong."
+          },
+          {
+            "id": 86,
+            "question": "I enjoy patiently but firmly nurturing others in their development as believers."
+          },
+          {
+            "id": 87,
+            "question": "I like to take a systematic approach to my study of the Bible."
+          },
+          {
+            "id": 88,
+            "question": "I can anticipate the likely consequences of an individual’s or a group’s action."
+          },
+          {
+            "id": 89,
+            "question": "People have told me that I was God’s instrument which brought supernatural change in lives or circumstances."
+          },
+          {
+            "id": 90,
+            "question": "I have prayed for others and physical healing has actually occurred."
+          },
+          {
+            "id": 91,
+            "question": "When I give a public message in tongues, I expect it to be interpreted."
+          },
+          {
+            "id": 92,
+            "question": "I have interpreted tongues in a way that seemed to bless others."
+          },
+          {
+            "id": 93,
+            "question": "I like to help organizations or groups become more efficient."
+          },
+          {
+            "id": 94,
+            "question": "I am able to orchestrate or oversee several church ministries."
+          },
+          { "id": 95, "question": "I honor God with my handcrafted gifts." },
+          {
+            "id": 96,
+            "question": "I apply various artistic expressions to communicate God’s truth."
+          },
+          {
+            "id": 97,
+            "question": "I receive affirmation from others concerning the reliability of my insights or perceptions."
+          },
+          {
+            "id": 98,
+            "question": "I am able to challenge or rebuke others in order to foster spiritual growth."
+          },
+          {
+            "id": 99,
+            "question": "I openly tell people that I am a Christian and want them to ask me about my faith."
+          },
+          {
+            "id": 100,
+            "question": "I am convinced of God’s daily presence and action in my life."
+          },
+          {
+            "id": 101,
+            "question": "I like knowing that my financial support makes a real difference in the lives and ministries of God’s people."
+          },
+          {
+            "id": 102,
+            "question": "I like to find small things that need to be done and often do them without being asked."
+          },
+          {
+            "id": 103,
+            "question": "I enjoy entertaining people and opening my home to others."
+          },
+          {
+            "id": 104,
+            "question": "When I hear about needy situations, I feel burdened to pray."
+          },
+          {
+            "id": 105,
+            "question": "I have suddenly known some things about others, but did not know how I knew them."
+          },
+          {
+            "id": 106,
+            "question": "I influence others to perform to the best of their capability."
+          },
+          {
+            "id": 107,
+            "question": "I can look beyond a person’s handicaps or problems to see a life that matters to God."
+          },
+          {
+            "id": 108,
+            "question": "I like people who are honest and will speak the truth."
+          },
+          {
+            "id": 109,
+            "question": "I enjoy giving guidance and practical support to a small group of people."
+          },
+          {
+            "id": 110,
+            "question": "I can communicate scripture in ways that motivate others to study and want to learn more."
+          },
+          {
+            "id": 111,
+            "question": "I give practical advice to help others through complicated situations."
+          },
+          {
+            "id": 112,
+            "question": "In the name of the Lord, I have been able to recover sight to the blind."
+          },
+          {
+            "id": 113,
+            "question": "When I pray for the sick, either I or they feel sensations of tingling or warmth."
+          },
+          {
+            "id": 114,
+            "question": "When I speak in tongues, I believe it is edifying to the Lord’s body."
+          },
+          {
+            "id": 115,
+            "question": "I have interpreted tongues in such a way that the message appeared to be directly from God."
+          },
+          {
+            "id": 116,
+            "question": "I can visualize a coming event, anticipate potential problems, and develop back-up plans."
+          },
+          {
+            "id": 117,
+            "question": "I enjoy pioneering new undertakings."
+          },
+          {
+            "id": 118,
+            "question": "I am good at and enjoy working with my hands."
+          },
+          {
+            "id": 119,
+            "question": "I regularly need to get alone to reflect and develop my imagination."
+          },
+          {
+            "id": 120,
+            "question": "I can identify preaching, teaching, or communication which is not true to the Bible."
+          },
+          {
+            "id": 121,
+            "question": "I like motivating others to take steps for spiritual growth."
+          },
+          {
+            "id": 122,
+            "question": "I openly and confidently tell others what Christ has done for me."
+          },
+          {
+            "id": 123,
+            "question": "I am regularly challenging others to trust God."
+          },
+          {
+            "id": 124,
+            "question": "I believe I have been given an abundance of resources so that I may give more to the Lord’s work."
+          },
+          {
+            "id": 125,
+            "question": "I feel comfortable being a helper, assisting others to do their job more effectively."
+          },
+          {
+            "id": 126,
+            "question": "I can make people feel at ease even in unfamiliar surroundings."
+          },
+          {
+            "id": 127,
+            "question": "I am honored when someone asks me to pray for them."
+          },
+          {
+            "id": 128,
+            "question": "I discover important biblical truths when reading or studying scripture which benefit others in the body of Christ."
+          },
+          {
+            "id": 129,
+            "question": "I am able to cast a vision in which others want to be a part."
+          },
+          {
+            "id": 130,
+            "question": "I enjoy doing practical things for others who are in need."
+          },
+          {
+            "id": 131,
+            "question": "I will speak God’s truth, even in places where it is unpopular or difficult for others to accept."
+          },
+          {
+            "id": 132,
+            "question": "I can gently restore wandering believers to faith and fellowship."
+          },
+          {
+            "id": 133,
+            "question": "I can present information and skills to others in a way that makes it easy for them to grasp and apply to their lives."
+          },
+          {
+            "id": 134,
+            "question": "I can apply scriptural truth that others regard as practical and helpful."
+          },
+          {
+            "id": 135,
+            "question": "I often pray that God would do greater works through me."
+          },
+          {
+            "id": 136,
+            "question": "Many times I have sensed someone needed healing even before they mentioned it."
+          },
+          {
+            "id": 137,
+            "question": "Sometimes I sense greater anticipation or energy prior to delivering a message in tongues."
+          },
+          {
+            "id": 138,
+            "question": "I believe that a tongue will always be interpreted."
+          }
+        ]
+      }
+    ]
+  },
+  "scoring": {
+    "buckets": [
+      {
+        "name": "A. Administration",
+        "values": [1, 24, 47, 70, 93, 116],
+        "description": ""
+      },
+      {
+        "name": "B. Apostleship/Missionary",
+        "values": [2, 25, 48, 71, 94, 117],
+        "description": ""
+      },
+      {
+        "name": "C. Craftsmanship",
+        "values": [3, 26, 49, 72, 95, 118],
+        "description": ""
+      },
+      {
+        "name": "D. Creative Communication",
+        "values": [4, 27, 50, 73, 96, 119],
+        "description": ""
+      },
+      {
+        "name": "E. Discernment",
+        "values": [5, 28, 51, 74, 97, 120],
+        "description": ""
+      },
+      {
+        "name": "F. Encouragement",
+        "values": [6, 29, 52, 75, 98, 121],
+        "description": ""
+      },
+      {
+        "name": "G. Evangelism",
+        "values": [7, 30, 53, 76, 99, 122],
+        "description": ""
+      },
+      {
+        "name": "H. Faith",
+        "values": [8, 31, 54, 77, 100, 123],
+        "description": ""
+      },
+      {
+        "name": "I. Giving",
+        "values": [9, 32, 55, 78, 101, 124],
+        "description": ""
+      },
+      {
+        "name": "J. Helps/service",
+        "values": [10, 33, 56, 79, 102, 125],
+        "description": ""
+      },
+      {
+        "name": "K. Hospitality",
+        "values": [11, 34, 57, 80, 103, 126],
+        "description": ""
+      },
+      {
+        "name": "L. Intercession",
+        "values": [12, 35, 58, 81, 104, 127],
+        "description": ""
+      },
+      {
+        "name": "M. Knowledge",
+        "values": [13, 36, 59, 82, 105, 128],
+        "description": ""
+      },
+      {
+        "name": "N. Leadership",
+        "values": [14, 37, 60, 83, 106, 129],
+        "description": ""
+      },
+      {
+        "name": "O. Mercy",
+        "values": [15, 38, 61, 84, 107, 130],
+        "description": ""
+      },
+      {
+        "name": "P. Prophecy",
+        "values": [16, 39, 62, 85, 108, 131],
+        "description": ""
+      },
+      {
+        "name": "Q. Shepherding",
+        "values": [17, 40, 63, 86, 109, 132],
+        "description": ""
+      },
+      {
+        "name": "R. Teaching",
+        "values": [18, 41, 64, 87, 110, 133],
+        "description": ""
+      },
+      {
+        "name": "S. Wisdom",
+        "values": [19, 42, 65, 88, 111, 134],
+        "description": ""
+      },
+      {
+        "name": "T. Miracles",
+        "values": [20, 43, 66, 89, 112, 135],
+        "description": ""
+      },
+      {
+        "name": "U. Healing",
+        "values": [21, 44, 67, 90, 113, 136],
+        "description": ""
+      },
+      {
+        "name": "V. Tongues",
+        "values": [22, 45, 68, 91, 114, 137],
+        "description": ""
+      },
+      {
+        "name": "W. Interpretation",
+        "values": [23, 46, 69, 92, 115, 138],
+        "description": ""
+      }
+    ]
+  }
+}

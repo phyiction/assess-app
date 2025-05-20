@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
 import Utils from './Utils.js';
@@ -36,7 +37,10 @@ export function NumberInputQuestion(props) {
     });
   }
 
-  const options = ['', '5', '4', '3', '2', '1'].map((opt) => {
+  const optionsArray =
+    props.options === undefined ? ['', '5', '4', '3', '2', '1'] : props.options;
+
+  const options = optionsArray.map((opt) => {
     return (
       <option key={opt} value={opt}>
         {opt === '' ? '-' : opt}

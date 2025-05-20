@@ -19,6 +19,11 @@
       "assessment": "eml_loving_union.json",
       "id": 4,
       "name": "EML: How Healthy is Your Experience of Loving Union with God?"
+    },
+    {
+      "assessment": "antioch_spiritual_gifts.json",
+      "id": 5,
+      "name": "Knowing your Giftings, Strengths, and Passions"
     }
   ]
 }

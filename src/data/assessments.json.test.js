@@ -1,7 +1,7 @@
 import assessmentsData from './assessments.json';
 
 describe('assessments.json', () => {
-  it('has two assessments', () => {
-    expect(assessmentsData.assessments.length).toBe(4);
+  it('has 5 assessments', () => {
+    expect(assessmentsData.assessments.length).toBe(5);
   });
 });

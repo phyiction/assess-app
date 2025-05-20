@@ -23,6 +23,8 @@ export default function AssessmentResults() {
     case 4:
       results = EmlAssessmentResults(data);
       break;
+    case 5:
+      results = AntiochGiftsAssessmentResults(data);
     default:
       null;
   }
@@ -238,5 +240,39 @@ function EmlAssessmentResults(data) {
         'Leading out of your Singleness'
       )}
     </Row>
+  );
+}
+
+function AntiochGiftsAssessmentResults(data) {
+  const giftTuples = data.scoring.buckets.map((b) => {
+    const sum = b.values
+      .map((x) => parseInt(data.answers[Utils.getQuestionId(x)]))
+      .reduce((acc, curr) => acc + curr, 0);
+    return { gift: b.name, sum: sum };
+  });
+
+  giftTuples.sort((a, b) => {
+    if (a.sum < b.sum) {
+      return 1;
+    } else if (a.sum === b.sum) {
+      return 0;
+    } else {
+      return -1;
+    }
+  });
+
+  const rows = giftTuples.map((x, i) => {
+    return (
+      <tr>
+        <td>{x.gift}</td>
+        <td>{x.sum}</td>
+      </tr>
+    );
+  });
+
+  return (
+    <table className='aa-table'>
+      <tbody>{rows}</tbody>
+    </table>
   );
 }

@@ -75,6 +75,37 @@ export default function AssessmentSection() {
           <div className="ml-2">1 = Never true of me</div>
         </div>
       );
+    } else if (data.assessment.id === 5) {
+      additionalDirections = (
+        <div>
+          <p>
+            Respond to each statement on the Giftings Assessment pages which
+            follow, according to the following scale:
+          </p>
+          <dl>
+            <dd>
+              <b>3</b> = Consistently, definitely true
+            </dd>
+            <dd>
+              <b>2</b> = Most of the time, usually true
+            </dd>
+            <dd>
+              <b>1</b> = Some of the time, once in a while
+            </dd>
+            <dd>
+              <b>0</b> = Not at all, never
+            </dd>
+          </dl>
+          <p>
+            <b>
+              Important: Answer according to who you are, not who you would like
+              to be or think you ought to be.
+            </b>{' '}
+            How true are these statements of you? What has been your experience?
+            To what degree do these statements reflect your usual tendencies?
+          </p>
+        </div>
+      );
     }
 
     return (
@@ -86,9 +117,10 @@ export default function AssessmentSection() {
   }
 
   const questions = data.section.questions.map((q) => {
-    const answer = data.answers
-      ? data.answers[Utils.getQuestionId(q.id)]
-      : null;
+    const answer =
+      data.answers !== undefined && data.answers !== null
+        ? data.answers[Utils.getQuestionId(q.id)]
+        : null;
 
     if (data.assessment.id === 1) {
       return (
@@ -99,6 +131,17 @@ export default function AssessmentSection() {
           db={data.db}
           section={data.section}
           question={q}
+        />
+      );
+    } else if (data.assessment.id === 5) {
+      return (
+        <NumberInputQuestion
+          key={q.id}
+          answer={answer}
+          assessment={data.assessment}
+          db={data.db}
+          question={q}
+          options={['', '3', '2', '1', '0']}
         />
       );
     } else {
