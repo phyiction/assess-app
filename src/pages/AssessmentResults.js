@@ -246,7 +246,14 @@ function EmlAssessmentResults(data) {
 function AntiochGiftsAssessmentResults(data) {
   const giftTuples = data.scoring.buckets.map((b) => {
     const sum = b.values
-      .map((x) => parseInt(data.answers[Utils.getQuestionId(x)]))
+      .map((x) => {
+        const qId = Utils.getQuestionId(x);
+        if(data.answers != null && data.answers[qId]){
+          return parseInt(data.answers[qId]);
+        }else{
+          return 0;
+        }
+      })
       .reduce((acc, curr) => acc + curr, 0);
     return { gift: b.name, sum: sum };
   });
