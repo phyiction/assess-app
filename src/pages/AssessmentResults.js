@@ -248,9 +248,9 @@ function AntiochGiftsAssessmentResults(data) {
     const sum = b.values
       .map((x) => {
         const qId = Utils.getQuestionId(x);
-        if(data.answers != null && data.answers[qId]){
+        if (data.answers != null && data.answers[qId]) {
           return parseInt(data.answers[qId]);
-        }else{
+        } else {
           return 0;
         }
       })
@@ -278,7 +278,7 @@ function AntiochGiftsAssessmentResults(data) {
   });
 
   return (
-    <table className='aa-table'>
+    <table className="aa-table">
       <tbody>{rows}</tbody>
     </table>
   );
