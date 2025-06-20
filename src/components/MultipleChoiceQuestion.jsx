@@ -30,7 +30,7 @@ export function MultipleChoiceQuestion(props) {
             `Saved choice for question ${questionId} in section ${sectionId} of assessment ${assessmentId}`
           );
         })
-        .catch((err) => {
+        .catch(() => {
           console.error(
             `Unable to save choice for question ${questionId} in section ${sectionId} of assessment ${assessmentId}`
           );

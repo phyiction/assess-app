@@ -1,9 +1,6 @@
-import { useState } from 'react';
-
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
 import Utils from './Utils.js';
@@ -29,7 +26,7 @@ export function NumberInputQuestion(props) {
             `Saved choice for question ${questionId} of assessment ${assessmentId}`
           );
         })
-        .catch((err) => {
+        .catch(() => {
           console.error(
             `Unable to save choice for question ${questionId} of assessment ${assessmentId}`
           );

@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import { Link, useLoaderData } from 'react-router-dom';
 
 import Col from 'react-bootstrap/Col';
@@ -25,6 +23,7 @@ export default function AssessmentResults() {
       break;
     case 5:
       results = AntiochGiftsAssessmentResults(data);
+      break;
     default:
       null;
   }
@@ -34,7 +33,7 @@ export default function AssessmentResults() {
       <Row>
         <Col>
           <p>
-            <Link to="/">Home</Link> > &nbsp;
+            <Link to="/">Home</Link> &gt; &nbsp;
             <span className="text-muted">{data.assessment.name}</span>
           </p>
         </Col>
@@ -268,7 +267,7 @@ function AntiochGiftsAssessmentResults(data) {
     }
   });
 
-  const rows = giftTuples.map((x, i) => {
+  const rows = giftTuples.map((x) => {
     return (
       <tr>
         <td>{x.gift}</td>

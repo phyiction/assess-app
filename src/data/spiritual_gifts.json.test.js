@@ -2,16 +2,18 @@ import spiritualGiftsData from './spiritual_gifts.json';
 
 describe('spiritual_gifts.json', () => {
   it('has only has one section', () => {
-    expect(spiritualGiftsData.assessment.sections.length).toBe(1);
+    expect(spiritualGiftsData.assessment.sections).toHaveLength(1);
   });
 
   it('assessment has 80 questions', () => {
-    expect(spiritualGiftsData.assessment.sections[0].questions.length).toBe(80);
+    expect(spiritualGiftsData.assessment.sections[0].questions).toHaveLength(
+      80
+    );
   });
 
   it('assesses 16 gifts', () => {
     const gifts = Object.entries(spiritualGiftsData.scoring);
-    expect(gifts.length).toBe(16);
+    expect(gifts).toHaveLength(16);
   });
 
   it('all questions are used in scoring', () => {

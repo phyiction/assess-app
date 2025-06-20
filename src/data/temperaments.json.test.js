@@ -2,7 +2,7 @@ import temperamentsData from './temperaments.json';
 
 describe('temperaments.json', () => {
   it('assessment has 4 sections', () => {
-    expect(temperamentsData.assessment.sections.length).toBe(4);
+    expect(temperamentsData.assessment.sections).toHaveLength(4);
   });
 
   it('assessment has 40 questions in total', () => {
@@ -13,7 +13,7 @@ describe('temperaments.json', () => {
   });
 
   it('scoring has 4 temperaments', () => {
-    expect(temperamentsData.scoring.temperaments.length).toBe(4);
+    expect(temperamentsData.scoring.temperaments).toHaveLength(4);
   });
 
   it('answers has 40 elements for each temperament', () => {

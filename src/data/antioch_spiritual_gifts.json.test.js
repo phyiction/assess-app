@@ -2,11 +2,11 @@ import assessmentData from './antioch_spiritual_gifts.json';
 
 describe('antioch_spiritual_gifts.json', () => {
   it('has 1 section', () => {
-    expect(assessmentData.assessment.sections.length).toBe(1);
+    expect(assessmentData.assessment.sections).toHaveLength(1);
   });
 
   it('has 138 questions in section', () => {
-    expect(assessmentData.assessment.sections[0].questions.length).toBe(138);
+    expect(assessmentData.assessment.sections[0].questions).toHaveLength(138);
     assessmentData.assessment.sections[0].questions.forEach((q, i) => {
       expect(q.id).toBe(i + 1);
       expect(q.question).toBeDefined();
@@ -16,13 +16,13 @@ describe('antioch_spiritual_gifts.json', () => {
 
   describe('scoring', () => {
     it('has 23 buckets', () => {
-      expect(assessmentData.scoring.buckets.length).toBe(23);
+      expect(assessmentData.scoring.buckets).toHaveLength(23);
     });
 
     it('has buckets with 6 values', () => {
       assessmentData.scoring.buckets.forEach((bucket, i) => {
         console.log(bucket);
-        expect(bucket.values.length).toBe(6);
+        expect(bucket.values).toHaveLength(6);
         bucket.values.forEach((val, j) => {
           switch (j) {
             case 0:

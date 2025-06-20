@@ -10,7 +10,7 @@ export default function Root() {
   const data = useLoaderData();
 
   function resetAssessmentData(aid) {
-    return function (e) {
+    return () => {
       const assessmentId = Utils.getAssessmentId(aid);
       data.db
         .removeItem(assessmentId)

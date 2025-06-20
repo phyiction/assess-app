@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import { MultipleChoiceQuestion } from '../components/MultipleChoiceQuestion.js';
-import { NumberInputQuestion } from '../components/NumberInputQuestion.js';
+import { MultipleChoiceQuestion } from '../components/MultipleChoiceQuestion.jsx';
+import { NumberInputQuestion } from '../components/NumberInputQuestion.jsx';
 import Utils from '../components/Utils.js';
 
 export default function AssessmentSection() {
@@ -170,7 +170,7 @@ export default function AssessmentSection() {
     );
   }
 
-  let next, results;
+  let next;
   if (data.section.nextSection === null) {
     next = (
       <Link to={`/assessments/${data.assessment.id}/results`}>
