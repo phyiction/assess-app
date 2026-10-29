@@ -1,0 +1,14 @@
+{
+  "features": {
+    "ghcr.io/cirolosapio/devcontainers-features/alpine-git:0": {
+      "version": "0.0.2",
+      "resolved": "ghcr.io/cirolosapio/devcontainers-features/alpine-git@sha256:b7cb46a1fe683282d0da6e48494a4ab8210acce19f05ee0c0660fc89a12f205a",
+      "integrity": "sha256:b7cb46a1fe683282d0da6e48494a4ab8210acce19f05ee0c0660fc89a12f205a"
+    },
+    "ghcr.io/cirolosapio/devcontainers-features/alpine-gpg:0": {
+      "version": "0.0.2",
+      "resolved": "ghcr.io/cirolosapio/devcontainers-features/alpine-gpg@sha256:d0c0c56e38035aa272631a9c5fd7eedb68085fb81c9b05ed6ff9fd4b88a98a9c",
+      "integrity": "sha256:d0c0c56e38035aa272631a9c5fd7eedb68085fb81c9b05ed6ff9fd4b88a98a9c"
+    }
+  }
+}
