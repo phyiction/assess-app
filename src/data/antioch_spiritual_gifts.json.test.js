@@ -1,4 +1,4 @@
-import assessmentData from './antioch_spiritual_gifts.json';
+import assessmentData from './antioch_spiritual_gifts.json' with { type: 'json' };
 
 describe('antioch_spiritual_gifts.json', () => {
   it('has 1 section', () => {

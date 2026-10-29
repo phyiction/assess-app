@@ -1,4 +1,4 @@
-import temperamentsData from './temperaments.json';
+import temperamentsData from './temperaments.json' with { type: 'json' };
 
 describe('temperaments.json', () => {
   it('assessment has 4 sections', () => {

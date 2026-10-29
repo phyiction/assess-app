@@ -1,4 +1,4 @@
-import emlMarriageSinglenessData from './eml_marriage_singleness.json';
+import emlMarriageSinglenessData from './eml_marriage_singleness.json' with { type: 'json' };
 
 describe('eml_marriage_singleness.json', () => {
   it('has two sections', () => {

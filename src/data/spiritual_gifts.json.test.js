@@ -1,4 +1,4 @@
-import spiritualGiftsData from './spiritual_gifts.json';
+import spiritualGiftsData from './spiritual_gifts.json' with { type: 'json' };
 
 describe('spiritual_gifts.json', () => {
   it('has only has one section', () => {

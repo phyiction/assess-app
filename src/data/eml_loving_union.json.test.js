@@ -1,4 +1,4 @@
-import emlLovingUnion from './eml_loving_union.json';
+import emlLovingUnion from './eml_loving_union.json' with { type: 'json' };
 
 describe('eml_loving_union.json', () => {
   it('has one section', () => {
