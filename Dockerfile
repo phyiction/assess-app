@@ -1,8 +1,6 @@
-FROM alpine:latest AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /home
-
-RUN apk add --update --no-cache nodejs npm
 
 # Build React application
 COPY . /home
